@@ -1,0 +1,2226 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Real Expert\n"
+"POT-Creation-Date: 2013-12-14 10:20+0700\n"
+"PO-Revision-Date: 2013-12-14 10:20+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../archive-agent.php:30 ../single-agent.php:25
+msgid "Ph. "
+msgstr ""
+
+#: ../archive-agent.php:70
+msgid "Read More"
+msgstr ""
+
+#: ../comments.php:25
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:26
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:33
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:44
+msgid "Comments are closed"
+msgstr ""
+
+#: ../content-aside.php:10 ../content-chat.php:12 ../content.php:31
+#: ../content.php:114 ../page-blog.php:35
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../content-aside.php:17 ../content-chat.php:21
+msgid "Read more "
+msgstr ""
+
+#: ../content-aside.php:18 ../content-chat.php:22 ../content-page.php:12
+msgid "Edit page"
+msgstr ""
+
+#: ../content.php:44 ../content.php:115 ../page-blog.php:46
+msgid "Read more"
+msgstr ""
+
+#: ../content.php:54
+msgid "Author"
+msgstr ""
+
+#: ../content.php:105 ../functions.php:567
+msgid "Next page"
+msgstr ""
+
+#: ../content.php:106 ../functions.php:568
+msgid "Previous page"
+msgstr ""
+
+#: ../entry-meta.php:13
+#, php-format
+msgid "Posted on %s at %s."
+msgstr ""
+
+#: ../entry-meta.php:15
+msgid "By"
+msgstr ""
+
+#: ../entry-meta.php:22
+msgid "Categories: "
+msgstr ""
+
+#: ../entry-meta.php:22 ../entry-meta.php:25
+msgid ", "
+msgstr ""
+
+#: ../entry-meta.php:25
+msgid "Tags: "
+msgstr ""
+
+#: ../entry-meta.php:44
+msgid "No Comments"
+msgstr ""
+
+#: ../entry-meta.php:46
+msgid " Comments"
+msgstr ""
+
+#: ../entry-meta.php:48
+msgid "1 Comment"
+msgstr ""
+
+#: ../entry-meta.php:52
+msgid "Comments are off for this post."
+msgstr ""
+
+#: ../entry-meta.php:66
+msgid "Tags : "
+msgstr ""
+
+#: ../functions.php:406
+msgid "Header Menu"
+msgstr ""
+
+#: ../functions.php:423
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:425
+msgid "Appears on posts and pages except the optional full width page template"
+msgstr ""
+
+#: ../functions.php:434
+msgid "Sidebar Property"
+msgstr ""
+
+#: ../functions.php:436
+msgid ""
+"Appears on Prpoperty post type except the optional full width page template"
+msgstr ""
+
+#: ../functions.php:457
+msgid "Footer First Column"
+msgstr ""
+
+#: ../functions.php:459 ../functions.php:475 ../functions.php:491
+#: ../functions.php:507
+msgid "Appears above the footer"
+msgstr ""
+
+#: ../functions.php:473
+msgid "Footer Second Column"
+msgstr ""
+
+#: ../functions.php:489
+msgid "Footer Third Column"
+msgstr ""
+
+#: ../functions.php:505
+msgid "Footer Fourth Column"
+msgstr ""
+
+#: ../functions.php:530
+msgid "&larr; Olders posts"
+msgstr ""
+
+#: ../functions.php:533
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: ../functions.php:783
+msgid "Post author"
+msgstr ""
+
+#: ../functions.php:786
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: ../functions.php:792
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:800 ../library/meta-box/inc/fields/file-advanced.php:103
+#: ../library/meta-box/inc/fields/file.php:139
+#: ../library/meta-box/inc/fields/image-advanced.php:108
+#: ../library/meta-box/inc/fields/image.php:145
+msgid "Edit"
+msgstr ""
+
+#: ../functions.php:801
+msgid "Reply"
+msgstr ""
+
+#: ../functions.php:853
+msgid "Search For"
+msgstr ""
+
+#: ../functions.php:856
+msgid "Tag"
+msgstr ""
+
+#: ../functions.php:862
+msgid "Category"
+msgstr ""
+
+#: ../functions.php:865 ../library/real-cpt.php:15
+msgid "Property"
+msgstr ""
+
+#: ../functions.php:868
+msgid "Blog"
+msgstr ""
+
+#: ../functions.php:871 ../library/real-cpt.php:336
+#: ../library/meta-box/metabox-config.php:194
+msgid "Agents"
+msgstr ""
+
+#: ../functions.php:875
+msgid "Daily Archives"
+msgstr ""
+
+#: ../functions.php:877
+msgid "Monthly Archives"
+msgstr ""
+
+#: ../functions.php:879
+msgid "Yearly Archives"
+msgstr ""
+
+#: ../functions.php:899
+msgid "F Y"
+msgstr ""
+
+#: ../functions.php:901
+msgid "Y"
+msgstr ""
+
+#: ../functions.php:911
+msgid "Comment"
+msgstr ""
+
+#: ../functions.php:916
+msgid "You may use these "
+msgstr ""
+
+#: ../functions.php:916
+msgid " tags and attributes: "
+msgstr ""
+
+#: ../functions.php:919
+msgid "LEAVE A COMMENT"
+msgstr ""
+
+#: ../functions.php:924
+msgid "Submit Comment"
+msgstr ""
+
+#: ../functions.php:928
+msgid "Your Name"
+msgstr ""
+
+#: ../functions.php:933
+msgid "Your Email"
+msgstr ""
+
+#: ../functions.php:938
+msgid "Subject"
+msgstr ""
+
+#: ../functions.php:956
+msgid "This post is password protected."
+msgstr ""
+
+#: ../functions.php:956
+msgid "To view it please enter your password below."
+msgstr ""
+
+#: ../functions.php:956
+msgid "Password:"
+msgstr ""
+
+#: ../functions.php:956
+msgid "Submit"
+msgstr ""
+
+#: ../functions.php:1310
+msgid "Next"
+msgstr ""
+
+#: ../functions.php:1311
+msgid "Prev"
+msgstr ""
+
+#: ../functions.php:1334
+msgid "Properties Listing"
+msgstr ""
+
+#: ../functions.php:1361 ../functions.php:1440 ../includes/sort-listing.php:33
+msgid "All"
+msgstr ""
+
+#: ../functions.php:1428
+msgid "Featured Properties"
+msgstr ""
+
+#: ../functions.php:1517 ../functions.php:1519 ../library/real-cpt.php:176
+msgid "Status"
+msgstr ""
+
+#: ../functions.php:1533
+msgid "$"
+msgstr ""
+
+#: ../functions.php:1599 ../functions.php:1601
+msgid "Location - any"
+msgstr ""
+
+#: ../functions.php:1632 ../functions.php:1634
+msgid "Type - Any"
+msgstr ""
+
+#: ../functions.php:1660 ../functions.php:1662
+msgid "Bedroom"
+msgstr ""
+
+#: ../functions.php:1680 ../functions.php:1682
+msgid "Bathroom"
+msgstr ""
+
+#: ../functions.php:1834 ../functions.php:1836
+msgid "Min. Price"
+msgstr ""
+
+#: ../functions.php:1886 ../functions.php:1888
+msgid "Max. Price"
+msgstr ""
+
+#: ../functions.php:2086 ../functions.php:2143
+msgid "You Have Received a Message From "
+msgstr ""
+
+#: ../functions.php:2093 ../functions.php:2145
+msgid "You have Received a message from: "
+msgstr ""
+
+#: ../functions.php:2096 ../functions.php:2157
+msgid "Their additional message is as follows."
+msgstr ""
+
+#: ../functions.php:2101 ../functions.php:2162
+msgid "You can contact "
+msgstr ""
+
+#: ../functions.php:2103 ../functions.php:2164
+msgid " via email, "
+msgstr ""
+
+#: ../functions.php:2110 ../functions.php:2171
+msgid "Message Sent Successfully!"
+msgstr ""
+
+#: ../functions.php:2114 ../functions.php:2175
+msgid "Server Error: WordPress mail method failed!"
+msgstr ""
+
+#: ../functions.php:2117 ../functions.php:2178
+msgid "Invalid Request !"
+msgstr ""
+
+#: ../functions.php:2149
+msgid "Message is sent using agent contact form on following property:"
+msgstr ""
+
+#: ../functions.php:2152
+msgid "You can view the property using following URL:"
+msgstr ""
+
+#: ../index.php:18
+msgid "Page not found"
+msgstr ""
+
+#: ../index.php:21
+msgid "No results were found."
+msgstr ""
+
+#: ../options.php:59
+msgid "General Settings"
+msgstr ""
+
+#: ../options.php:64
+msgid "Favicon"
+msgstr ""
+
+#: ../options.php:68
+msgid ""
+"Your favicon should be an .ico file type and normally 16 x 16 pixels.  Read "
+"more about "
+msgstr ""
+
+#: ../options.php:68
+msgid "creating a Favicon"
+msgstr ""
+
+#: ../options.php:72
+msgid "Site Logo"
+msgstr ""
+
+#: ../options.php:76
+msgid ""
+"Your site logo image should be an .png, .jpg, or .gif file type and normally "
+"180 x 45 pixels."
+msgstr ""
+
+#: ../options.php:82
+msgid "Property Settings"
+msgstr ""
+
+#: ../options.php:84
+msgid ""
+"Select how many properties that you want to show per page on property "
+"listing page and search results page."
+msgstr ""
+
+#: ../options.php:103
+msgid "Property location search form input type"
+msgstr ""
+
+#: ../options.php:106
+msgid "Text input"
+msgstr ""
+
+#: ../options.php:107
+msgid "Select box"
+msgstr ""
+
+#: ../options.php:113
+msgid "Custom CSS"
+msgstr ""
+
+#: ../options.php:115
+msgid "Insert your custom css code here."
+msgstr ""
+
+#: ../options.php:121
+msgid "Google Analytics Tracking Code"
+msgstr ""
+
+#: ../options.php:123
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. It will be "
+"inserted before the closing head tag \"&lt;/head&gt;\" of your theme."
+msgstr ""
+
+#: ../options.php:128
+msgid "Comment Settings"
+msgstr ""
+
+#: ../options.php:130
+msgid "Display \"Comments are closed\" message."
+msgstr ""
+
+#: ../options.php:136
+msgid "SEO Settings"
+msgstr ""
+
+#: ../options.php:138
+msgid "Enter your meta description site here."
+msgstr ""
+
+#: ../options.php:143
+msgid "Enter your meta keyword (separated by comma)."
+msgstr ""
+
+#: ../options.php:149
+msgid "Footer Text"
+msgstr ""
+
+#: ../options.php:150
+msgid "Display a credit footer"
+msgstr ""
+
+#: ../options.php:157
+msgid "Enter footer credit text."
+msgstr ""
+
+#: ../options.php:165
+msgid "Homepage"
+msgstr ""
+
+#: ../options.php:170
+msgid "Slider"
+msgstr ""
+
+#: ../options.php:173
+msgid "Display slider on Homepage version 2"
+msgstr ""
+
+#: ../options.php:179
+msgid "Start slider automatically"
+msgstr ""
+
+#: ../options.php:185
+msgid "Slide delay (seconds)"
+msgstr ""
+
+#: ../options.php:201
+msgid "Map Country (Homepage v1)"
+msgstr ""
+
+#: ../options.php:210
+msgid "Search Page URL"
+msgstr ""
+
+#: ../options.php:213
+msgid ""
+"To configure the search functionality. Create a Property Search page using "
+"\"Property Search Template\" and provide its URL here. (Make sure to "
+"configure the permalinks)."
+msgstr ""
+
+#: ../options.php:217
+msgid "Slogan Title"
+msgstr ""
+
+#: ../options.php:220
+msgid "Slogan title will appear on Homepage version 1 above search form."
+msgstr ""
+
+#: ../options.php:224
+msgid "Slogan Text"
+msgstr ""
+
+#: ../options.php:227
+msgid "Slogan text will appear on Homepage version 1 above search form."
+msgstr ""
+
+#: ../options.php:231
+msgid "Number of Featured Properties to Display on Homepage"
+msgstr ""
+
+#: ../options.php:245 ../library/real-cpt.php:265
+msgid "Partners"
+msgstr ""
+
+#: ../options.php:248
+msgid "Partners title"
+msgstr ""
+
+#: ../options.php:254
+msgid "Partners excerpt"
+msgstr ""
+
+#: ../options.php:260
+msgid "Styling"
+msgstr ""
+
+#: ../options.php:299
+msgid "Header"
+msgstr ""
+
+#: ../options.php:300
+msgid "Header background color"
+msgstr ""
+
+#: ../options.php:306
+msgid "Header text color"
+msgstr ""
+
+#: ../options.php:312
+msgid "Navigation Menu"
+msgstr ""
+
+#: ../options.php:313
+msgid "Navigation menu background color"
+msgstr ""
+
+#: ../options.php:319
+msgid "Navigation menu text color"
+msgstr ""
+
+#: ../options.php:325
+msgid "Navigation menu border color"
+msgstr ""
+
+#: ../options.php:331
+msgid "Navigation menu text hover color"
+msgstr ""
+
+#: ../options.php:337
+msgid "Navigation menu text hover border bottom color"
+msgstr ""
+
+#: ../options.php:343
+msgid "Navigation menu hover background color"
+msgstr ""
+
+#: ../options.php:349
+msgid "Dropdown Menu"
+msgstr ""
+
+#: ../options.php:350
+msgid "Dropdown menu background color"
+msgstr ""
+
+#: ../options.php:356
+msgid "Dropdown menu background hover color"
+msgstr ""
+
+#: ../options.php:362
+msgid "Dropdown menu border bottom color"
+msgstr ""
+
+#: ../options.php:368
+msgid "Dropdown menu item text color"
+msgstr ""
+
+#: ../options.php:374
+msgid "Dropdown menu item text hover color"
+msgstr ""
+
+#: ../options.php:380
+msgid "Dropdown menu item border bottom color"
+msgstr ""
+
+#: ../options.php:387
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../options.php:388
+msgid "Widget title background color"
+msgstr ""
+
+#: ../options.php:394
+msgid "Widget title text color"
+msgstr ""
+
+#: ../options.php:400
+msgid "Footer"
+msgstr ""
+
+#: ../options.php:401
+msgid "Footer background color"
+msgstr ""
+
+#: ../options.php:407
+msgid "Footer text color"
+msgstr ""
+
+#: ../options.php:413
+msgid "Footer widget title text color"
+msgstr ""
+
+#: ../options.php:433
+msgid "Property Status Background Color"
+msgstr ""
+
+#: ../options.php:453
+msgid "Layout Settings"
+msgstr ""
+
+#: ../options.php:459
+msgid "1 column = 70px"
+msgstr ""
+
+#: ../options.php:460
+msgid "2 columns = 170px"
+msgstr ""
+
+#: ../options.php:461
+msgid "3 columns = 270px"
+msgstr ""
+
+#: ../options.php:462
+msgid "4 columns = 370px"
+msgstr ""
+
+#: ../options.php:463
+msgid "5 columns = 470px"
+msgstr ""
+
+#: ../options.php:464
+msgid "6 columns = 570px"
+msgstr ""
+
+#: ../options.php:465
+msgid "7 columns = 670px"
+msgstr ""
+
+#: ../options.php:466
+msgid "8 columns = 770px"
+msgstr ""
+
+#: ../options.php:467
+msgid "9 columns = 870px"
+msgstr ""
+
+#: ../options.php:468
+msgid "10 columns = 970px"
+msgstr ""
+
+#: ../options.php:469
+msgid "11 columns = 1070px"
+msgstr ""
+
+#: ../options.php:474
+msgid "Sidebar width"
+msgstr ""
+
+#: ../options.php:479
+msgid ""
+"Page width = sidebar width + content width. Changing sidebar width will also "
+"affect content width."
+msgstr ""
+
+#: ../options.php:482
+msgid "12 columns = 1170px"
+msgstr ""
+
+#: ../options.php:485
+msgid "Footer widget column width"
+msgstr ""
+
+#: ../options.php:490
+msgid "Width of the first footer widget."
+msgstr ""
+
+#: ../options.php:497
+msgid "Width of the second footer widget."
+msgstr ""
+
+#: ../options.php:504
+msgid "Width of the third footer widget."
+msgstr ""
+
+#: ../options.php:511
+msgid "Width of the fourth footer widget."
+msgstr ""
+
+#: ../options.php:516
+msgid "Price Format"
+msgstr ""
+
+#: ../options.php:521
+msgid "Currency Sign"
+msgstr ""
+
+#: ../options.php:524
+msgid "Provide currency sign. For example : <strong>$</strong>"
+msgstr ""
+
+#: ../options.php:528
+msgid "Number of Decimals Points"
+msgstr ""
+
+#: ../options.php:530
+msgid "Provide the number of decimals points."
+msgstr ""
+
+#: ../options.php:548
+msgid "Decimal Point Separator"
+msgstr ""
+
+#: ../options.php:552
+msgid "Provide the decimal point separator. For example : <strong>.</strong>"
+msgstr ""
+
+#: ../options.php:556
+msgid "Thousands Separator"
+msgstr ""
+
+#: ../options.php:560
+msgid "Provide the thousands separator. For example : <strong>,</strong>"
+msgstr ""
+
+#: ../options.php:565
+msgid "Contact Info"
+msgstr ""
+
+#: ../options.php:570
+msgid "Company Name"
+msgstr ""
+
+#: ../options.php:573
+msgid "Enter your company name"
+msgstr ""
+
+#: ../options.php:577
+msgid "Company Address"
+msgstr ""
+
+#: ../options.php:580
+msgid "Enter your company address"
+msgstr ""
+
+#: ../options.php:584
+msgid "Google Map"
+msgstr ""
+
+#: ../options.php:587
+msgid ""
+"Latitude. <em>Click <a href=\" http://universimmedia.pagesperso-orange.fr/"
+"geo/loc.htm\" target=\"_blank\">here</a> to get your location coordinate.</"
+"em>"
+msgstr ""
+
+#: ../options.php:593
+msgid "Longitude"
+msgstr ""
+
+#: ../options.php:597
+msgid "Contact Email"
+msgstr ""
+
+#: ../options.php:600
+msgid "Enter your e-mail address"
+msgstr ""
+
+#: ../options.php:604
+msgid "Telephone"
+msgstr ""
+
+#: ../options.php:607
+msgid "Enter your telephone number"
+msgstr ""
+
+#: ../options.php:611
+msgid "Company Info"
+msgstr ""
+
+#: ../options.php:614
+msgid "Enter your company aditional information"
+msgstr ""
+
+#: ../options.php:618
+msgid "Contact Form"
+msgstr ""
+
+#: ../options.php:621
+msgid "Contact form title"
+msgstr ""
+
+#: ../options.php:627
+msgid "Contact form excerpt"
+msgstr ""
+
+#: ../options.php:632
+msgid "Social Network"
+msgstr ""
+
+#: ../options.php:633
+msgid "Facebook URL."
+msgstr ""
+
+#: ../options.php:639 ../library/meta-box/metabox-config.php:292
+msgid "Twitter URL"
+msgstr ""
+
+#: ../options.php:645 ../library/meta-box/metabox-config.php:301
+msgid "Google Plus URL"
+msgstr ""
+
+#: ../options.php:651
+msgid "RSS Feed URL"
+msgstr ""
+
+#: ../page-contact.php:16 ../single-agent.php:78 ../single-property.php:122
+msgid "*Name"
+msgstr ""
+
+#: ../page-contact.php:17 ../single-agent.php:79 ../single-property.php:123
+msgid "*Email"
+msgstr ""
+
+#: ../page-contact.php:18
+msgid "Website"
+msgstr ""
+
+#: ../page-contact.php:21 ../single-agent.php:82 ../single-property.php:126
+msgid "*Message"
+msgstr ""
+
+#: ../page-contact.php:24 ../single-property.php:129
+msgid "Send"
+msgstr ""
+
+#: ../page-homepage-v1.php:32
+msgid "Find Property"
+msgstr ""
+
+#: ../page-homepage-v1.php:35
+msgid "Address, Suburbs, Postcodes, or Regions (separated by commas)"
+msgstr ""
+
+#: ../page-property.php:35 ../page-search.php:104
+msgid "No Properties Found!"
+msgstr ""
+
+#: ../page-search.php:96 ../includes/property-listing-default.php:73
+msgid "View Map"
+msgstr ""
+
+#: ../search.php:25
+msgid "No results were found for: \"<strong>"
+msgstr ""
+
+#: ../searchform.php:8
+msgid "Search here "
+msgstr ""
+
+#: ../searchform.php:9
+msgid "Search!"
+msgstr ""
+
+#: ../searchform.php:9 ../library/widget/widget-property-search.php:92
+msgid "Search"
+msgstr ""
+
+#: ../sidebar-property.php:14 ../sidebar.php:14
+msgid "There are no sidebar widgets defined"
+msgstr ""
+
+#: ../single-agent.php:72
+msgid "Contact Agent "
+msgstr ""
+
+#: ../single-agent.php:85 ../library/widget/widget-property-agent.php:45
+msgid "Contact Agent"
+msgstr ""
+
+#: ../single-property.php:73
+msgid " Bedrooms"
+msgstr ""
+
+#: ../single-property.php:74
+msgid " Bathrooms"
+msgstr ""
+
+#: ../single-property.php:75
+msgid " Garages"
+msgstr ""
+
+#: ../single-property.php:76
+msgid "Print this page"
+msgstr ""
+
+#: ../single-property.php:100
+msgid "Property Map"
+msgstr ""
+
+#: ../single-property.php:115
+msgid "Send message to Agent "
+msgstr ""
+
+#: ../single.php:18
+msgid "&larr; "
+msgstr ""
+
+#: ../single.php:21
+msgid " &rarr;"
+msgstr ""
+
+#: ../includes/agent-related.php:4
+msgid "Property Listed by "
+msgstr ""
+
+#: ../includes/property-loop.php:127
+msgid "Sorry No Results Found"
+msgstr ""
+
+#: ../includes/property-recent.php:3
+msgid "Recent Properties"
+msgstr ""
+
+#: ../includes/property-related.php:2
+msgid "Related Property"
+msgstr ""
+
+#: ../includes/sort-listing.php:6
+msgid "Sort By: "
+msgstr ""
+
+#: ../library/real-cpt.php:14
+msgid "Properties"
+msgstr ""
+
+#: ../library/real-cpt.php:16 ../library/real-cpt.php:267
+#: ../library/real-cpt.php:338
+msgid "Add New"
+msgstr ""
+
+#: ../library/real-cpt.php:17
+msgid "Add New Property"
+msgstr ""
+
+#: ../library/real-cpt.php:18
+msgid "Edit Property"
+msgstr ""
+
+#: ../library/real-cpt.php:19
+msgid "New Property"
+msgstr ""
+
+#: ../library/real-cpt.php:20
+msgid "View Property"
+msgstr ""
+
+#: ../library/real-cpt.php:21
+msgid "Search Property"
+msgstr ""
+
+#: ../library/real-cpt.php:22
+msgid "No Property found"
+msgstr ""
+
+#: ../library/real-cpt.php:23
+msgid "No Property found in Trash"
+msgstr ""
+
+#: ../library/real-cpt.php:53 ../library/real-cpt.php:54
+#: ../library/real-cpt.php:67
+msgid "Property Features"
+msgstr ""
+
+#: ../library/real-cpt.php:55
+msgid "Search Property Features"
+msgstr ""
+
+#: ../library/real-cpt.php:56
+msgid "Popular Property Features"
+msgstr ""
+
+#: ../library/real-cpt.php:57
+msgid "All Property Features"
+msgstr ""
+
+#: ../library/real-cpt.php:58
+msgid "Parent Property Feature"
+msgstr ""
+
+#: ../library/real-cpt.php:59
+msgid "Parent Property Feature:"
+msgstr ""
+
+#: ../library/real-cpt.php:60
+msgid "Edit Property Feature"
+msgstr ""
+
+#: ../library/real-cpt.php:61
+msgid "Update Property Feature"
+msgstr ""
+
+#: ../library/real-cpt.php:62
+msgid "Add New Property Feature"
+msgstr ""
+
+#: ../library/real-cpt.php:63
+msgid "New Property Feature Name"
+msgstr ""
+
+#: ../library/real-cpt.php:64
+msgid "Separate Property Features with commas"
+msgstr ""
+
+#: ../library/real-cpt.php:65
+msgid "Add or remove Property Features"
+msgstr ""
+
+#: ../library/real-cpt.php:66
+msgid "Choose from the most used Property Features"
+msgstr ""
+
+#: ../library/real-cpt.php:71 ../library/real-cpt.php:72
+msgid "Property Type"
+msgstr ""
+
+#: ../library/real-cpt.php:73
+msgid "Search Property Types"
+msgstr ""
+
+#: ../library/real-cpt.php:74
+msgid "Popular Property Types"
+msgstr ""
+
+#: ../library/real-cpt.php:75
+msgid "All Property Types"
+msgstr ""
+
+#: ../library/real-cpt.php:76
+msgid "Parent Property Type"
+msgstr ""
+
+#: ../library/real-cpt.php:77
+msgid "Parent Property Type:"
+msgstr ""
+
+#: ../library/real-cpt.php:78
+msgid "Edit Property Type"
+msgstr ""
+
+#: ../library/real-cpt.php:79
+msgid "Update Property Type"
+msgstr ""
+
+#: ../library/real-cpt.php:80
+msgid "Add New Property Type"
+msgstr ""
+
+#: ../library/real-cpt.php:81
+msgid "New Property Type Name"
+msgstr ""
+
+#: ../library/real-cpt.php:82
+msgid "Separate Property Types with commas"
+msgstr ""
+
+#: ../library/real-cpt.php:83
+msgid "Add or remove Property Types"
+msgstr ""
+
+#: ../library/real-cpt.php:84
+msgid "Choose from the most used Property Types"
+msgstr ""
+
+#: ../library/real-cpt.php:85
+msgid "Property Types"
+msgstr ""
+
+#: ../library/real-cpt.php:96
+msgid "property-type"
+msgstr ""
+
+#: ../library/real-cpt.php:101 ../library/real-cpt.php:102
+msgid "Property City"
+msgstr ""
+
+#: ../library/real-cpt.php:103
+msgid "Search Property Cities"
+msgstr ""
+
+#: ../library/real-cpt.php:104
+msgid "Popular Property Cities"
+msgstr ""
+
+#: ../library/real-cpt.php:105
+msgid "All Property Cities"
+msgstr ""
+
+#: ../library/real-cpt.php:106
+msgid "Parent Property City"
+msgstr ""
+
+#: ../library/real-cpt.php:107
+msgid "Parent Property City:"
+msgstr ""
+
+#: ../library/real-cpt.php:108
+msgid "Edit Property City"
+msgstr ""
+
+#: ../library/real-cpt.php:109
+msgid "Update Property City"
+msgstr ""
+
+#: ../library/real-cpt.php:110
+msgid "Add New Property City"
+msgstr ""
+
+#: ../library/real-cpt.php:111
+msgid "New Property City Name"
+msgstr ""
+
+#: ../library/real-cpt.php:112
+msgid "Separate Property Cities with commas"
+msgstr ""
+
+#: ../library/real-cpt.php:113
+msgid "Add or remove Property Cities"
+msgstr ""
+
+#: ../library/real-cpt.php:114
+msgid "Choose from the most used Property Cities"
+msgstr ""
+
+#: ../library/real-cpt.php:115
+msgid "Property Cities"
+msgstr ""
+
+#: ../library/real-cpt.php:126
+msgid "property-city"
+msgstr ""
+
+#: ../library/real-cpt.php:132 ../library/real-cpt.php:133
+#: ../library/real-cpt.php:146
+msgid "Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:134
+msgid "Search Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:135
+msgid "Popular Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:136
+msgid "All Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:137
+msgid "Parent Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:138
+msgid "Parent Property Status:"
+msgstr ""
+
+#: ../library/real-cpt.php:139
+msgid "Edit Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:140
+msgid "Update Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:141
+msgid "Add New Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:142
+msgid "New Property Status Name"
+msgstr ""
+
+#: ../library/real-cpt.php:143
+msgid "Separate Property Status with commas"
+msgstr ""
+
+#: ../library/real-cpt.php:144
+msgid "Add or remove Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:145
+msgid "Choose from the most used Property Status"
+msgstr ""
+
+#: ../library/real-cpt.php:157
+msgid "property-status"
+msgstr ""
+
+#: ../library/real-cpt.php:171
+msgid "Property Title"
+msgstr ""
+
+#: ../library/real-cpt.php:172
+msgid "Thumbnail"
+msgstr ""
+
+#: ../library/real-cpt.php:173
+msgid "Address"
+msgstr ""
+
+#: ../library/real-cpt.php:174
+msgid "City"
+msgstr ""
+
+#: ../library/real-cpt.php:175
+msgid "Type"
+msgstr ""
+
+#: ../library/real-cpt.php:177
+msgid "Price"
+msgstr ""
+
+#: ../library/real-cpt.php:178
+msgid "Beds"
+msgstr ""
+
+#: ../library/real-cpt.php:179
+msgid "Baths"
+msgstr ""
+
+#: ../library/real-cpt.php:180
+msgid "Garages"
+msgstr ""
+
+#: ../library/real-cpt.php:181 ../library/real-cpt.php:306
+msgid "Publish Time"
+msgstr ""
+
+#: ../library/real-cpt.php:202
+msgid "No Thumbnail"
+msgstr ""
+
+#: ../library/real-cpt.php:214
+msgid "No Address Provided!"
+msgstr ""
+
+#: ../library/real-cpt.php:232 ../library/real-cpt.php:241
+#: ../library/real-cpt.php:250
+msgid "NA"
+msgstr ""
+
+#: ../library/real-cpt.php:266 ../library/real-cpt.php:304
+msgid "Partner"
+msgstr ""
+
+#: ../library/real-cpt.php:268
+msgid "Add New Partner"
+msgstr ""
+
+#: ../library/real-cpt.php:269
+msgid "Edit Partner"
+msgstr ""
+
+#: ../library/real-cpt.php:270
+msgid "New Partner"
+msgstr ""
+
+#: ../library/real-cpt.php:271
+msgid "View Partner"
+msgstr ""
+
+#: ../library/real-cpt.php:272
+msgid "Search Partner"
+msgstr ""
+
+#: ../library/real-cpt.php:273
+msgid "No Partner found"
+msgstr ""
+
+#: ../library/real-cpt.php:274
+msgid "No Partner found in Trash"
+msgstr ""
+
+#: ../library/real-cpt.php:290
+msgid "partners"
+msgstr ""
+
+#: ../library/real-cpt.php:305
+msgid "Logo"
+msgstr ""
+
+#: ../library/real-cpt.php:324
+msgid "No logo provided"
+msgstr ""
+
+#: ../library/real-cpt.php:337
+msgid "Agent"
+msgstr ""
+
+#: ../library/real-cpt.php:339
+msgid "Add New Agent"
+msgstr ""
+
+#: ../library/real-cpt.php:340
+msgid "Edit Agent"
+msgstr ""
+
+#: ../library/real-cpt.php:341
+msgid "New Agent"
+msgstr ""
+
+#: ../library/real-cpt.php:342
+msgid "View Agent"
+msgstr ""
+
+#: ../library/real-cpt.php:343
+msgid "Search Agent"
+msgstr ""
+
+#: ../library/real-cpt.php:344
+msgid "No Agent found"
+msgstr ""
+
+#: ../library/real-cpt.php:345
+msgid "No Agent found in Trash"
+msgstr ""
+
+#: ../library/real-cpt.php:362
+msgid "agents"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:41
+msgid "Property Details"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:50
+msgid "Property Images*"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:52
+msgid ""
+"Please provide property images, These images will be displayed in slider on "
+"property details page. Images should have minimum width of 770px and minimum "
+"height of 386px, Bigger size images will be cropped automatically. (up to 8 "
+"images)"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:59
+msgid "Property Price*"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:61
+msgid "Provide property Sale OR Rent Price"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:68
+msgid "Price Postfix Text"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:70
+msgid ""
+"Text provided here will appear after price. (You can also leave it empty) "
+"Example Value: Per Month"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:77
+msgid "Property Size*"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:79
+msgid ""
+"Provide property size with related measurement unit. Example Value: 240 sq ft"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:85
+msgid "Bedrooms*"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:87
+msgid "Provide number of bedrooms. Example Value: 4"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:96
+msgid "Bathrooms*"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:98
+msgid "Provide number of bathrooms. Example Value: 2. Example Value: 4"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:107
+msgid "Garages*"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:109
+msgid "Provide number of garages. Example: 1"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:118
+msgid "Property Address"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:120
+msgid "Provide property address."
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:127
+msgid "Property States / Provinces"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:129
+msgid "Provide your property states"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:136
+msgid "Property Location at Google Map*"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:138
+msgid ""
+"Drag the google map marker to point your property location. You can also use "
+"the address field above to search for your property."
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:163
+msgid "Mark this Property as Featured"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:165
+msgid ""
+"Marking this property featured will display it in featured properties "
+"sections across the theme."
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:172
+msgid "Add in Homepage Slider"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:174
+msgid ""
+"Do you want to add this property in Homepage Slider ? If Yes, Then you also "
+"need to provide slider image below."
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:178
+msgid "Yes"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:179
+msgid "No"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:185
+msgid "Slider Image"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:187
+msgid ""
+"Provide the image that will be displayed in Homepage Slider. The recommended "
+"image size is 2000px by 700px. You can use bigger or little smaller image "
+"but try to keep the same height to width ratio and use the exactly same size "
+"images for all properties that will be added in slider."
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:196
+msgid "Please select related Agent."
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:213
+msgid "Partners Setting"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:222
+msgid "Partner URL"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:224
+msgid "Paste here Partner Website link"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:238
+msgid "Provide Related Information"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:247
+msgid "Email Address"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:249
+msgid ""
+"Provide Agent's Email Address. Agent related messages from contact form on "
+"property details page, will be sent on this email address."
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:256
+msgid "Mobile Number"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:258
+msgid "Provide Agent's mobile number"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:265
+msgid "Office Number"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:267
+msgid "Provide Agent's office number"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:274
+msgid "Fax Number"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:276
+msgid "Provide Agent's fax number"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:283
+msgid "Facebook URL"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:285
+msgid "Provide Agent's Facebook URL"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:294
+msgid "Provide Agent's Twitter URL"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:303
+msgid "Provide Agent's Google Plus URL"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:310
+msgid "LinkedIn URL"
+msgstr ""
+
+#: ../library/meta-box/metabox-config.php:312
+msgid "Provide Agent's LinkedIn URL"
+msgstr ""
+
+#: ../library/meta-box/inc/classes/meta-box.php:252
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: ../library/meta-box/inc/classes/meta-box.php:426
+msgid "+"
+msgstr ""
+
+#: ../library/meta-box/inc/classes/meta-box.php:448
+msgid "&#8211;"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/button.php:36
+msgid "Click me"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file-advanced.php:23
+#: ../library/meta-box/inc/fields/plupload-image.php:106
+msgid "Select Files"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file-advanced.php:66
+msgid "Select or Upload Files"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file-advanced.php:102
+#: ../library/meta-box/inc/fields/file.php:138
+#: ../library/meta-box/inc/fields/image-advanced.php:107
+#: ../library/meta-box/inc/fields/image.php:144
+msgid "Delete"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file.php:19
+#, php-format
+msgid "You may only upload maximum %d file"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file.php:20
+#, php-format
+msgid "You may only upload maximum %d files"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file.php:70
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file.php:84
+msgid "Upload Files"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/file.php:85
+msgid "+ Add new file"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/image-advanced.php:22
+msgid "Select Images"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/image-advanced.php:71
+msgid "Select or Upload Images"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/image.php:64
+msgid "Order saved"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/image.php:78
+#: ../library/meta-box/inc/fields/thickbox-image.php:35
+msgid "Upload Images"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/image.php:79
+msgid "+ Add new image"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/map.php:49
+msgid "Find Address"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/plupload-image.php:104
+msgid "Drop images here"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/plupload-image.php:105
+msgid "or"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/plupload-image.php:181
+msgid "Allowed Image Files"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/post.php:54
+msgid "Post"
+msgstr ""
+
+#: ../library/meta-box/inc/fields/post.php:68
+#: ../library/meta-box/inc/fields/taxonomy.php:40
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:11
+msgid "Title Text"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:12
+msgid "Add the title's text"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:16
+msgid "Insert Title Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:30
+msgid "Button URL"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:31
+msgid "Add the button's url eg http://example.com"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:35
+msgid "Button Style"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:36
+msgid "Select the button's style, ie the button's colour"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:50
+msgid "Button Size"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:51
+msgid "Select the button's size"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:60
+msgid "Button Target"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:61
+msgid "_self = open in same window. _blank = open in new window"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:70
+msgid "Button's Text"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:71
+msgid "Add the button's text"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:75
+msgid "Insert Button Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:87
+msgid "Alert Style"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:88
+msgid "Select the alert's style, ie the alert colour"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:100
+msgid "Alert Text"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:101
+msgid "Add the alert's text"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:106
+msgid "Insert Alert Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:118
+msgid "Toggle Content Title"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:119
+msgid "Add the title that will go above the toggle content"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:125
+msgid "Toggle Content"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:126
+msgid "Add the toggle content. Will accept HTML"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:130
+msgid "Toggle State"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:131
+msgid "Select the state of the toggle on page load"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:139
+msgid "Toggle Style"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:140
+msgid "Select the toggle title style"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:149
+msgid "Insert Toggle Content Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:160
+msgid "Insert Tab Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:167
+#: ../library/shortcodes/tinymce/config.php:204
+msgid "Tab Title"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:168
+msgid "Title of the tab"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:173
+#: ../library/shortcodes/tinymce/config.php:225
+msgid "Tab Content"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:174
+msgid "Add the tabs content"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:178
+#: ../library/shortcodes/tinymce/config.php:230
+msgid "Add Tab"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:189
+msgid "Tabs Title"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:197
+msgid "Insert Vertical Tab Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:209
+msgid "Title Icon"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:242
+msgid "Insert Columns Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:250
+msgid "Column Type"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:251
+msgid "Select the type, ie width of the column."
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:280
+msgid "Column Content"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:281
+msgid "Add the column content."
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:285
+msgid "Add Column"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:295
+msgid "Insert Table Shortcode"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:303
+msgid "Table Title"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:304
+msgid "Enter your table title"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:305
+msgid "Table"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:309
+msgid "Table Style"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:310
+msgid "Select table style"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:321
+msgid "Table Content"
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:322
+msgid "Add the table content."
+msgstr ""
+
+#: ../library/shortcodes/tinymce/config.php:326
+msgid "Add Table"
+msgstr ""
+
+#: ../library/widget/widget-blog.php:11
+msgid "List of lastest blog post "
+msgstr ""
+
+#: ../library/widget/widget-blog.php:13
+msgid "Real Expert - Blog"
+msgstr ""
+
+#: ../library/widget/widget-blog.php:78
+#: ../library/widget/widget-featured-property.php:117
+#: ../library/widget/widget-property-agent.php:64
+#: ../library/widget/widget-property-search.php:112
+msgid "Title:"
+msgstr ""
+
+#: ../library/widget/widget-blog.php:83
+msgid "Number of posts to show:"
+msgstr ""
+
+#: ../library/widget/widget-blog.php:88
+msgid "Display post date?"
+msgstr ""
+
+#: ../library/widget/widget-featured-property.php:10
+msgid "List of lastest featured property "
+msgstr ""
+
+#: ../library/widget/widget-featured-property.php:12
+msgid "Real Expert - Featured Properties"
+msgstr ""
+
+#: ../library/widget/widget-featured-property.php:122
+msgid "Number of properties to show:"
+msgstr ""
+
+#: ../library/widget/widget-property-agent.php:10
+msgid "Displaying related agent property in single property page"
+msgstr ""
+
+#: ../library/widget/widget-property-agent.php:12
+msgid "Real Expert - Agent"
+msgstr ""
+
+#: ../library/widget/widget-property-agent.php:20
+msgid "Agent Info"
+msgstr ""
+
+#: ../library/widget/widget-property-search.php:11
+msgid "Advance property search form "
+msgstr ""
+
+#: ../library/widget/widget-property-search.php:13
+msgid "Real Expert - Advance Property Search"
+msgstr ""
+
+#: ../library/widget/widget-property-search.php:113
+msgid "Property Search"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:19
+msgid ""
+"This widget is the Tabs that classically goes into the sidebar. It contains "
+"the Popular posts, Latest Posts and Recent comments."
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:25
+msgid "Real Expert - Tabs"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:45 ../library/widget/widget-tabs.php:50
+#: ../library/widget/widget-tabs.php:153 ../library/widget/widget-tabs.php:163
+msgid "Recent"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:46 ../library/widget/widget-tabs.php:51
+#: ../library/widget/widget-tabs.php:154 ../library/widget/widget-tabs.php:166
+msgid "Comments"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:47 ../library/widget/widget-tabs.php:155
+#: ../library/widget/widget-tabs.php:169
+msgid "Tags"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:49 ../library/widget/widget-tabs.php:152
+#: ../library/widget/widget-tabs.php:160
+msgid "Popular"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:135
+msgid "Number of posts:"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:140
+msgid "Display featured images?"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:145
+msgid "Popular limit (days):"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:150
+msgid "First Visible Tab:"
+msgstr ""
+
+#: ../library/widget/widget-tabs.php:158
+msgid "Hide Tabs:"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter-widget.php:20
+msgid "Display your latest tweets"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter-widget.php:54
+msgid "Twitter Feed"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter-widget.php:58
+msgid "Title"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter-widget.php:62
+msgid "Your Twitter username"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter-widget.php:66
+msgid "Number of tweets"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:72
+#, php-format
+msgid ""
+"Our Twitter feed is currently unavailable but you can visit our official "
+"twitter page  <a href=\"%1s\" target=\"_blank\">%2s</a>."
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:150
+msgid "about"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "second"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "minute"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "hour"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "day"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "week"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "month"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "year"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:219
+msgid "decade"
+msgstr ""
+
+#: ../library/wolf-twitter/wolf-twitter.php:224
+msgid "ago"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:182
+#: ../theme-options/inc/options-framework.php:183
+#: ../theme-options/inc/options-framework.php:416
+msgid "Theme Options"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:228
+msgid "Clear"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:229
+msgid "Default"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:230
+msgid "Select Color"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:263
+msgid "Theme Documentation"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:264
+msgid "Theme Support"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:265
+msgid "Theme Collection"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:280
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:312
+msgid "Default options restored."
+msgstr ""
+
+#: ../theme-options/inc/options-framework.php:366
+msgid "Options saved."
+msgstr ""
+
+#: ../theme-options/inc/options-media-uploader.php:51
+msgid "No file chosen"
+msgstr ""
+
+#: ../theme-options/inc/options-media-uploader.php:54
+#: ../theme-options/inc/options-media-uploader.php:110
+#: ../theme-options/inc/options-medialibrary-uploader.php:129
+msgid "Upload"
+msgstr ""
+
+#: ../theme-options/inc/options-media-uploader.php:56
+#: ../theme-options/inc/options-media-uploader.php:111
+msgid "Remove"
+msgstr ""
+
+#: ../theme-options/inc/options-media-uploader.php:59
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: ../theme-options/inc/options-media-uploader.php:83
+#: ../theme-options/inc/options-medialibrary-uploader.php:152
+msgid "View File"
+msgstr ""
+
+#: ../theme-options/inc/options-medialibrary-uploader.php:26
+#: ../theme-options/inc/upgrade.php:31
+msgid "Theme Options Media"
+msgstr ""
+
+#: ../theme-options/inc/options-medialibrary-uploader.php:289
+msgid "Gallery"
+msgstr ""
+
+#: ../theme-options/inc/options-medialibrary-uploader.php:289
+msgid "Previously Uploaded"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:232
+msgid "No Repeat"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:233
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:234
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:235
+msgid "Repeat All"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:248
+msgid "Top Left"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:249
+msgid "Top Center"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:250
+msgid "Top Right"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:251
+msgid "Middle Left"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:252
+msgid "Middle Center"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:253
+msgid "Middle Right"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:254
+msgid "Bottom Left"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:255
+msgid "Bottom Center"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:256
+msgid "Bottom Right"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:269
+msgid "Scroll Normally"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:270
+msgid "Fixed in Place"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:344
+msgid "Normal"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:345
+msgid "Italic"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:346
+msgid "Bold"
+msgstr ""
+
+#: ../theme-options/inc/options-sanitize.php:347
+msgid "Bold Italic"
+msgstr ""
