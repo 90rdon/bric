@@ -37,10 +37,10 @@ get_header(); ?>
 									<div class="container">
 										<div class="flex-caption">
 											<div class="caption-title">
-												<h3><a href="<?php echo the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+												<h3><!--<a href="<?php echo the_permalink(); ?>">--><?php echo get_the_title(); ?></a></h3>
 												<p><?php echo substr(get_the_excerpt(),0,60); ?></p>
 											</div>
-											<div class="caption-meta">
+											<!-- <div class="caption-meta">
 												<p class="caption-status">
 												<?php
 													$status_terms = get_the_terms( $post->ID,"property-status" );
@@ -57,7 +57,7 @@ get_header(); ?>
 														property_price(true, true);
 													?>
 												</p>
-											</div>
+											</div> -->
 										</div>
 									</div>
 								</li>

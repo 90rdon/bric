@@ -41,6 +41,11 @@
 			$meta_investment_caprate = get_caprate($meta_price, $meta_investment_noi);
 		?>
 		<div class="listing-meta">
+			<?php if (!empty($meta_investment_caprate)): ?>
+				<div class="property-caprate clearfix">
+					<div class="meta-size"><span class="meta-text">Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></span></div>
+				</div>
+			<?php endif; ?>
 			<ul>
 				<li class="meta-size"><i class="ico-size"></i><?php echo $meta_size; ?></li><li class="meta-bedroom"><i class="ico-bedroom"></i><?php echo $meta_bedrooms; ?></li><li class="meta-bathroom"><i class="ico-bathroom"></i><?php echo $meta_bathrooms; ?></li><li class="meta-garage"><i class="ico-garage"></i><?php echo $meta_garages; ?></li>
 			</ul>
@@ -57,9 +62,6 @@
 			<div class="listing-property-price">
 				<span class="span7">
 					<?php property_price(true); ?>
-					<?php	if (!empty($meta_investment_caprate)): ?>
-						<h6>Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></h6>
-					<?php endif; ?>
 				</span>
 				<?php	if (!empty($meta_investment_caprate)): ?>
 					<span class="listing-property-caprate span5">

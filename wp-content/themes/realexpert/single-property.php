@@ -69,11 +69,6 @@ $property_id =  $Page_ID;
 						$meta_garages = get_post_meta( $post->ID, 'REAL_EXPERT_property_garages', true );
 						$meta_address = get_post_meta( $post->ID, 'REAL_EXPERT_property_address', true );
 						$meta_price = get_post_meta( $post->ID, 'REAL_EXPERT_property_price', true );
-						$meta_investment_rent = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_rent', true );
-						$meta_investment_hoa = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_hoa', true );
-						$meta_investment_tax = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_tax', true );
-						$meta_investment_noi = get_noi($meta_investment_rent, $meta_investment_hoa, $meta_investment_tax);
-						$meta_investment_caprate = get_caprate($meta_price, $meta_investment_noi);
 					?>
 					<span class="meta-size"><i class="ico-size"></i><?php echo $meta_size; ?></span>
 					<span class="meta-bedroom"><i class="ico-bedroom"></i><?php echo $meta_bedrooms.'<span class="meta-hidden">'.__( ' Bedrooms', 'realexpert' ).'</span>'; ?></span>
@@ -89,14 +84,32 @@ $property_id =  $Page_ID;
 					<p class="single-property-address"><?php echo $meta_address;  ?></p>
 				</header>
 				<div class="single-property-price">
+					<?php 
+						// bric custom fields
+						$meta_price = get_post_meta( $post->ID, 'REAL_EXPERT_property_price', true );
+						$meta_investment_rent = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_rent', true );
+						$meta_investment_hoa = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_hoa', true );
+						$meta_investment_tax = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_tax', true );
+						$meta_investment_noi = get_noi($meta_investment_rent, $meta_investment_hoa, $meta_investment_tax);
+						$meta_investment_caprate = get_caprate($meta_price, $meta_investment_noi);
+					?>
 					<p><h3><?php property_price(true); ?></h3></p>
-					<?php //if($investment_noi): ?>
-						<p>Rent: <?php echo get_custom_price($meta_investment_rent); ?></p>
-						<p>HOA: <?php echo get_custom_price($meta_investment_hoa); ?></p>
-						<p>Tax: <?php echo get_custom_price($meta_investment_tax); ?></p>
-						<p>NOI: <?php echo get_custom_price($meta_investment_noi); ?></p>
-						<p>Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></p>
-					<?php //endif; ?>
+					<?php 
+						// bric custom fields
+						$meta_price = get_post_meta( $post->ID, 'REAL_EXPERT_property_price', true );
+						$meta_investment_rent = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_rent', true );
+						$meta_investment_hoa = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_hoa', true );
+						$meta_investment_tax = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_tax', true );
+						$meta_investment_noi = get_noi($meta_investment_rent, $meta_investment_hoa, $meta_investment_tax);
+						$meta_investment_caprate = get_caprate($meta_price, $meta_investment_noi);
+
+						if (!empty($meta_investment_caprate)): ?>
+							<p><h6>Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></h6></p>
+							<p>Rent: <?php echo get_custom_price($meta_investment_rent); ?></p>
+							<p>HOA: <?php echo get_custom_price($meta_investment_hoa); ?></p>
+							<p>Tax: <?php echo get_custom_price($meta_investment_tax); ?></p>
+							<p>NOI: <?php echo get_custom_price($meta_investment_noi); ?></p>
+					<?php endif; ?>
 				</div>
 				<div class="single-property-content">
 					<?php the_content(); ?>

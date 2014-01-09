@@ -23,12 +23,21 @@
 				<?php
 					$args = array(
 						'post_type' => 'property',
-						'orderby' => 'post_date',
 						'posts_per_page' => -1,
-						// bric - if property city is filled, it belongs to the featured communities
-						'tax_query' => array( array('taxonomy' => 'property-city','field' => 'slug','terms' => get_terms('property-city', 'fields=names') ),),
+						'tax_query' => array( 
+							array(
+								'taxonomy' => 'property-city',
+								'field' => 'slug',
+								'terms' => get_terms('property-city', 'fields=names') 
+							),
+						),
 						//'tax_query' => array( array('taxonomy' => 'property-type','field' => 'slug','terms' => $type ),),
 					);
+
+					$args['orderby'] = 'meta_value_num';
+					$args['meta_key'] = 'REAL_EXPERT_property_price';
+					$args['order'] = 'ASC';
+
 					$property = new WP_Query( $args );
 					if( $property->have_posts() ):
 						while( $property->have_posts() ): $property->the_post();
@@ -57,12 +66,13 @@
 											echo '<img class="status-'.$status_id.'" src="http://www.placehold.it/270x180/" />';
 										}
 										echo '</a>';
+										$starting_price = get_post_meta( $post->ID, 'REAL_EXPERT_property_development_price', true );
 									?>
 										<div class="property-status status-<?php echo $status_id; ?>-text"><?php echo $property_status; ?></div>
 									</div><!-- /.property-images -->
-									<div class="property-attribute">
+									<div class="property-attribute-communities">
 										<h3 class="attribute-title"><a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>" ><?php echo substr( get_the_title(), 0, 27); if( strlen( get_the_title() ) > 27 ) { echo'...'; } ?></a><i class="icon-heart"></i></h3>
-										<span class="attribute-city">
+										<!-- <span class="attribute-city">
 										<?php
 										$city_terms = get_the_terms( $post->ID,"property-city" );
 										if(!empty( $city_terms )){
@@ -71,14 +81,30 @@
 											}
 										}
 										?>
-										</span>
+										</span> -->
 										<div class="attribute-price">
-											<span class="attr-pricing">
-												<?php property_price(true, true); ?>
-											</span>
+											<?php if (isset($starting_price) && !empty($starting_price)): ?>
+												<span class="attr-starting">
+													<p>Starting at</p>
+												</span>
+												<span class="attr-pricing">
+													<?php echo get_custom_price($starting_price); ?>
+												</span>
+											<?php endif; ?>
+										</div>
+										<div class="attribute-desc">
+											<p>
+												<?php 
+													$the_excerpt = get_the_excerpt();
+													echo substr( $the_excerpt, 0, 100 );
+													if( strlen( $the_excerpt)  > 100 ){
+														echo '...';
+													}
+												?>
+											</p>
 										</div>
 									</div>
-									<div class="property-meta clearfix">
+									<!-- <div class="property-meta clearfix">
 									<?php
 										$meta_size = get_post_meta( $post->ID, 'REAL_EXPERT_property_size', true );
 										$meta_bedrooms = get_post_meta( $post->ID, 'REAL_EXPERT_property_bedrooms', true );
@@ -87,7 +113,7 @@
 										<div class="meta-size meta-block"><i class="ico-size"></i><span class="meta-text"><?php echo $meta_size; ?></span></div>
 										<div class="meta-bedroom meta-block"><i class="ico-bedroom"></i><span class="meta-text"><?php echo $meta_bedrooms; ?></span></div>
 										<div class="meta-bathroom meta-block"><i class="ico-bathroom"></i><span class="meta-text"><?php echo $meta_bathrooms; ?></span></div>
-									</div>
+									</div> -->
 								</article>
 							</div>
 							<?php

@@ -30,11 +30,18 @@
 				'post_type' => 'property',
 				'posts_per_page' => 3,
 				'meta_query' => array(
-						'key' => 'REAL_EXPERT_property_featured',
-						'value' => '1',
-						'compare' => '=',
-					),
-				);
+					array(
+							'key' => 'REAL_EXPERT_property_featured',
+							'value' => '1',
+							'compare' => '=',
+						)
+				),
+			);
+			
+			$query_args['orderby'] = 'meta_value_num';
+    	$query_args['meta_key'] = 'REAL_EXPERT_property_price';
+    	$query_args['order'] = 'ASC';
+
 			$featured_query = new WP_Query( $query_args );
 			if( $featured_query->have_posts()){
 				while( $featured_query->have_posts() ){

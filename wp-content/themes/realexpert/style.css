@@ -50,7 +50,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     position: relative;
     overflow: hidden;
     /* You need at least a height, adjust this to your needs */
-    height: 390px;
+    height: 450px;
 }
 
 .carousel-wrapper{
@@ -280,7 +280,7 @@ code {
 
 .top-menu{
 	text-align:right;
-	padding-top:20px;
+	padding-top:40px;
 	color:#9bacb6;
 	font-size:15px;
 	font-weight:400;
@@ -496,15 +496,18 @@ code {
 	background:#CCC;
 }
 
+	.flex-caption {
+		top: -185px;
+	}
+
 .flex-caption{
-	position:absolute;
-	bottom:100px;
+	position:relative;
+	bottom:180px;
 	width:auto;
 	height:100px;
 }
 	.flex-caption .caption-title{
 		float:left;
-		width:485px;
 		height:80px;
 		padding:18px 25px;
 		background-color:rgba( 255, 255, 255, 1);
@@ -531,9 +534,9 @@ code {
 	}
 	
 	.flex-caption .caption-title h3 {
-		font-size: 27px;
+		font-size: 24px;
 		font-weight: 600;
-		line-height: 20px;
+		line-height: 12px;
 	}
 	
 	.flex-caption .caption-title h3 a, .flex-caption .caption-title h3 a:hover  {
@@ -548,8 +551,8 @@ code {
 /* Search Form Style */
 #search_form{
 	position:relative;
-	bottom:100px;
-	margin-bottom:-100px;
+	bottom:216px;
+	margin-bottom:-250px;
 	
 }
 
@@ -898,6 +901,12 @@ area[title]{
 	position: relative;
 }
 
+.property-attribute-communities {
+	padding: 10px 15px 200px 15px;
+	height: auto;
+	position: relative;
+}
+
 .attribute-title {
 	font-size: 16px;
 	font-weight: 400;
@@ -928,10 +937,21 @@ area[title]{
 	font-weight:600;
 	color:#007bb0;
 	text-align:center;
+	border-top: 1px solid #e2e8ec;
 	padding-top:25px;
 }
+
+.attr-starting{
+	font-size:12px;
+	color:#757c80;
+	text-align:center;
+}
+
+.attribute-desc{
+	padding: 5px 25px;
+}
+
 	.attr-pricing{
-		border-top: 1px solid #e2e8ec;
 		padding: 10px 25px;
 	}
 	.price-postfix{
@@ -950,9 +970,9 @@ area[title]{
 
 .property-caprate {
 	border-top: 1px solid #e2e8ec;
-	background-color: #f5f7f9;
+	background-color: #007bb0;
 	width: 100%;
-	color: #007bb0;
+	color: #f5f7f9;
 }
 
 .meta-block{
@@ -2119,27 +2139,37 @@ a img.aligncenter {
 /*	Banner Style	*/
 /*----------------------------------------------------------------*/
 #banner{
-	height:175px;
+	height:145px;
 	margin-bottom:30px;
 	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #deeff7 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#deeff7)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#deeff7 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffffff 0%,#deeff7 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffffff 0%,#deeff7 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffffff 0%,#deeff7 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#deeff7',GradientType=0 ); /* IE6-9 */
+/* FF3.6+ */
+/* Chrome,Safari4+ */
+/* Chrome10+,Safari5.1+ */
+/* Opera 11.10+ */
+/* IE10+ */
+/* W3C */
+/* IE6-9 */
+
+/*	background: -moz-linear-gradient(top,  #ffffff 0%, #deeff7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#deeff7));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#deeff7 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#deeff7 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#deeff7 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#deeff7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#deeff7',GradientType=0 );*/
+
 }
 
 #banner_container{
-	background:url("images/header-property-bg.png") no-repeat right bottom;
 	height:100%;
+	background:transparent url("images/bric-bg.jpg") no-repeat right bottom;
 }
 
 .banner-title {
-	padding-top: 40px;
-	font-size: 36px;
-	color:#50585c;
+	padding-top: 0px;
+	padding-left: 10px;
+	font-size: 42px;
+	color:#ffffff !important;
 }
 
 .banner-subtitle{
@@ -2218,6 +2248,10 @@ a img.aligncenter {
 .single-property-price h3{
 	color:#007bb0;
 	font-weight:500;
+}
+
+.single-property-price h6{
+	color:#007bb0;
 }
 
 .agent-information ul{
@@ -2876,6 +2910,7 @@ a img.aligncenter {
 	.flexslider .slides img {
 		max-width: 1200px;
 		width:1200px !important;
+		height: 400px; 
 		margin:0 auto;
 	}
 	
@@ -2885,7 +2920,7 @@ a img.aligncenter {
 	
 	#search_form {
 		bottom:0;
-		margin-bottom:50px
+		margin-bottom:0px
 	}
 	
 	.img-link{
@@ -2897,7 +2932,7 @@ a img.aligncenter {
 	}
 	
 	.flex-caption {
-		top: 255px;
+		top: -130px;
 	}
 	
 	.nav-background .navbar .nav>li>a {
@@ -3043,11 +3078,11 @@ a img.aligncenter {
 	
 	#search_form {
 		bottom:0;
-		margin-bottom:50px
+		margin-bottom:0px;
 	}
 	
 	.flex-caption {
-		top: 200px;
+		top: -125px;
 	}
 	
 	.meta-block {
@@ -3123,6 +3158,7 @@ a img.aligncenter {
 		max-width: 800px;
 		width:800px !important;
 		margin:0 auto;
+		height: 270px;
 	}
 	
 	.flex-direction-nav a {
@@ -3130,8 +3166,7 @@ a img.aligncenter {
 	}
 	
 	.flex-caption {
-		top: 170px;
-		width:400px;
+		top: -110px;
 	}
 	.flex-caption .caption-title{
 		width:260px;
@@ -3497,6 +3532,34 @@ a img.aligncenter {
 	}
 	.img-link{
 		display:none;
+	}
+
+	.flex-caption {
+		top: 0px;
+	}
+	.flex-caption .caption-title{
+		width:260px;
+		padding: 18px 5px;
+	}
+	
+	.flex-caption .caption-title p{
+		font-size:11px;
+	}
+	
+	.flex-caption .caption-meta{
+		width:80px;
+	}
+	.flex-caption .caption-meta p.caption-status{
+		
+		padding:5px;
+	}
+	.flex-caption .caption-meta p.caption-price{
+		font-size:16px;
+	}
+	
+	.flex-caption .caption-title h3{
+		font-size:18px;		
+		line-height:14px;
 	}
 
 	#property_list img, .property-item img{

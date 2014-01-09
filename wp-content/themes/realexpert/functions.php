@@ -1439,8 +1439,8 @@ if( !function_exists( 'listing_args' ) ){
 		if( isset( $_GET['type'] ) && $_GET['type'] != 'all' ){
 			$tax_query[] = array(
 				'taxonomy' => 'property-type',
-                'field' => 'slug',
-                'terms' => $_GET['type']
+          'field' => 'slug',
+          'terms' => $_GET['type']
 			);
 		}
 		
@@ -1465,6 +1465,12 @@ if( !function_exists( 'listing_args' ) ){
           'key' => 'REAL_EXPERT_property_featured',
           'value' => 1,
           'compare' => '='
+        );
+      }elseif($page_title == "Communities"){
+        $tax_query[] = array(
+          'taxonomy' => 'property-city',
+          'field' => 'slug',
+          'terms' => get_terms('property-city', 'fields=names') 
         );
       }
     }
@@ -1519,19 +1525,25 @@ if( !function_exists( 'add_featured_sortmenu' ) ){
 				$check = true;
 				$all='';
 				if( empty( $_GET['type'] ) ){
-					$_GET['type'] = 'condos';
-					//$all = 'current';
+        //   $page_title = get_the_title();
+        //   if($page_title != "Invest"){
+				    // $_GET['type'] = 'condos';
+        //   }
+					$all = 'current';
 				} elseif ( $_GET['type'] == 'all' ) {
 					$all = 'current';
 					unset( $_GET['type'] );
 				}
 					echo '<a class="'.$all.'" href="'.home_url().'?type=all">'.__( 'All', 'realexpert' ).'</a>';
 				foreach ( $terms as $term ) {
-					$current = '';
-					if( !empty( $_GET['type'] ) && $_GET['type'] == $term->slug ){
-						$current = 'current';
-					}
-					echo '<a class="'.$current.'" href="'.home_url().'?type='.$term->slug.'">' . $term->name . '</a>';
+          // bric customization
+          if ($term->name != "Communities"){
+  					$current = '';
+  					if( !empty( $_GET['type'] ) && $_GET['type'] == $term->slug ){
+  						$current = 'current';
+  					}
+  					echo '<a class="'.$current.'" href="'.home_url().'?type='.$term->slug.'">' . $term->name . '</a>';
+          }
 				}
 			}
 			?>
@@ -1679,7 +1691,11 @@ function property_status(){
     }
 
     function get_caprate($price, $noi){
-        return $noi / $price;
+        if (isset($noi) && $noi > 0){
+          return $noi / $price;
+        }else{
+          return NULL;
+        }
     }
 
 
