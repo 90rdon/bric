@@ -13,7 +13,8 @@
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	
+	<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+
 	<?php if ( of_get_option( 'favicon' ) ): ?>
 		<link rel="shortcut icon" href="<?php echo of_get_option( 'favicon' ); ?>" />
 	<?php else: ?>
@@ -33,15 +34,21 @@
 								<?php if( of_get_option( 'site_logo' ) ){ ?>
 									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 										<img class="site-logo" src="<?php echo of_get_option( 'site_logo' ); ?>" alt="<?php bloginfo( 'name' ); ?>" />
-									</a>								
+									</a>
 								<?php }else{ ?>
 									<h3 class="site-title">
 										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 									</h3>
 								<?php } ?>
 								</div>
+								<div class="slogan pull-left">
+									<center>
+										<div class="slogan-font1">Investment Property Specialist</div>
+										<!-- <div class="slogan-font2">"Buy, Sell, Invest - Your Investment Specialist"</div> -->
+									</center>
+								</div>
 								<div class="pull-right">
-									
+
 									<div class="top-menu">
 										<?php
 											$contact_email = of_get_option('contact_email');
@@ -58,21 +65,21 @@
 					</div>
 					<div class="nav-background">
 						<div class="container">
-							<?php	
+							<?php
 								include('_navbar.php');
 							?>
 						</div>
 					</div>
 				</header><!-- #header -->
-			
+
 			<?php do_action( 'realexpert_after_header' ); ?>
-			
+
 		<div class="content-wrapper clearfix">
 			<?php do_action( 'realexpert_before_content' ); ?>
-			<?php if( !is_page_template( 'page-homepage-v1.php' ) && 
-					  !is_page_template( 'page-homepage-v2.php' ) && 
-					  !is_page_template( 'page-fullwidth.php' ) && 
-					  !is_page_template( 'page-search.php' ) && 
+			<?php if( !is_page_template( 'page-homepage-v1.php' ) &&
+					  !is_page_template( 'page-homepage-v2.php' ) &&
+					  !is_page_template( 'page-fullwidth.php' ) &&
+					  !is_page_template( 'page-search.php' ) &&
 					  !is_page_template( 'page-contact.php' ) ): ?>
 			<div id="main" class="row-fluid">
 				<section  id="content" class="<?php echo (realexpert_get_content_width()) ?>" role="main">

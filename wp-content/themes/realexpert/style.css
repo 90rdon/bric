@@ -46,6 +46,24 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 	color:#50585c;
 }
 
+.slogan {
+	color:#ffffff;
+	padding-top: 13px;
+	margin-left: 10px;
+}
+
+.slogan-font1 {
+	/*line-height: 10px !important;*/
+	margin-top: 23px;
+	font-size: 18px;
+}
+
+.slogan-font2 {
+	font-size: 22px;
+	font-style: italic;
+	font-family: 'Sacramento', cursive;
+}
+
 .jcarousel {
     position: relative;
     overflow: hidden;
@@ -281,13 +299,13 @@ code {
 .top-menu{
 	text-align:right;
 	padding-top:40px;
-	color:#9bacb6;
+	color:#ffffff !important;
 	font-size:15px;
 	font-weight:400;
 }
 
 .top-menu a{
-	color:#9bacb6;
+	color:#ffffff !important;
 }
 
 .contact-info  i{
@@ -312,6 +330,7 @@ code {
 	height: 16px;
 	line-height: 16px;
 	vertical-align: text-top;
+	color: #ffffff;
 	background-image: url("images/contact-icon.png");
 	background-repeat: no-repeat;
 }
@@ -497,7 +516,7 @@ code {
 }
 
 	.flex-caption {
-		top: -185px;
+		top: -139px;
 	}
 
 .flex-caption{
@@ -508,9 +527,9 @@ code {
 }
 	.flex-caption .caption-title{
 		float:left;
-		height:80px;
-		padding:18px 25px;
+		padding:10px 30px 2px;
 		background-color:rgba( 255, 255, 255, 1);
+		opacity: 0.95;
 	}
 	
 	.flex-caption .caption-meta{
@@ -551,16 +570,15 @@ code {
 /* Search Form Style */
 #search_form{
 	position:relative;
-	bottom:216px;
-	margin-bottom:-250px;
+	bottom:165px;
+	margin-bottom:-180px;
 	
 }
 
 .as-form-wrapper{
 	background-color:#d4d8db;
-	padding:25px 30px;
+	padding:10px 30px;
 	padding-bottom:0px;
-	min-height:75px; /* tmp */
 }
 
 /*------------------------------------------------------*/
@@ -994,6 +1012,15 @@ area[title]{
 	padding-bottom:10px;
 }
 
+.community-meta{
+	border-left: 1px solid #e2e8ec;
+	border-top: 1px solid #e2e8ec;
+	background-color: #f5f7f9;
+	width: 100%;
+	color: #767d81;
+
+}
+
 
 .ico-size, .ico-bedroom, .ico-bathroom, .ico-heart, .ico-print, .ico-garage{
 	width:23px;
@@ -1363,6 +1390,7 @@ area[title]{
 
 		.listing-property-caprate {
 			font-size: 12px;
+			padding-top:10px;
 			padding-bottom:10px;
 			font-weight: 200;
 			margin-top: -15px;
@@ -2139,7 +2167,7 @@ a img.aligncenter {
 /*	Banner Style	*/
 /*----------------------------------------------------------------*/
 #banner{
-	height:145px;
+	height:100px;
 	margin-bottom:30px;
 	background: #ffffff; /* Old browsers */
 /* FF3.6+ */
@@ -2150,26 +2178,25 @@ a img.aligncenter {
 /* W3C */
 /* IE6-9 */
 
-/*	background: -moz-linear-gradient(top,  #ffffff 0%, #deeff7 100%);
+	background: -moz-linear-gradient(top,  #ffffff 0%, #deeff7 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#deeff7));
 	background: -webkit-linear-gradient(top,  #ffffff 0%,#deeff7 100%);
 	background: -o-linear-gradient(top,  #ffffff 0%,#deeff7 100%);
 	background: -ms-linear-gradient(top,  #ffffff 0%,#deeff7 100%);
 	background: linear-gradient(to bottom,  #ffffff 0%,#deeff7 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#deeff7',GradientType=0 );*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#deeff7',GradientType=0 );
 
 }
 
 #banner_container{
 	height:100%;
-	background:transparent url("images/bric-bg.jpg") no-repeat right bottom;
+	background:transparent url("images/header-property-bg.png") no-repeat right bottom;
 }
 
 .banner-title {
 	padding-top: 0px;
 	padding-left: 10px;
 	font-size: 42px;
-	color:#ffffff !important;
 }
 
 .banner-subtitle{
@@ -2190,7 +2217,7 @@ a img.aligncenter {
 }
 
 #single_property_meta_wrapper .forrent{
-	background-color:#ea4d39;
+	background-color:#0E6E97;
 }
 
 #single_property_meta_wrapper .forsale{
@@ -2199,11 +2226,11 @@ a img.aligncenter {
 
 .single-property-meta >[class^="meta-"]{
 	display:inline-block;
-	padding:10px 20px;
+	padding:10px 15px;
 	border-right:1px solid #e2e8ec;
 	border-top:1px solid #e2e8ec;
 	margin:0;
-	float:left;
+	float:right;
 	color:#767d81;
 	background : #f2f5f7;
 }
@@ -2217,7 +2244,7 @@ a img.aligncenter {
 	border:none;
 	background:none;
 	padding:15px 25px;
-	float:right;
+	float:left;
 	margin-right:20px;
 	color:#FFFFFF;
 	font-size:16px;
@@ -2252,6 +2279,10 @@ a img.aligncenter {
 
 .single-property-price h6{
 	color:#007bb0;
+}
+
+.single-property-caprate{
+	max-width: 300px;
 }
 
 .agent-information ul{
@@ -2932,7 +2963,7 @@ a img.aligncenter {
 	}
 	
 	.flex-caption {
-		top: -130px;
+		top: -124px;
 	}
 	
 	.nav-background .navbar .nav>li>a {
@@ -3082,7 +3113,7 @@ a img.aligncenter {
 	}
 	
 	.flex-caption {
-		top: -125px;
+		top: -115px;
 	}
 	
 	.meta-block {
@@ -3166,7 +3197,7 @@ a img.aligncenter {
 	}
 	
 	.flex-caption {
-		top: -110px;
+		top: -77px;
 	}
 	.flex-caption .caption-title{
 		width:260px;
@@ -3317,6 +3348,10 @@ a img.aligncenter {
 
 @media (max-width: 767px){
 	.header-background .pull-right{
+		display:none;
+	}
+
+	.slogan {
 		display:none;
 	}
 	

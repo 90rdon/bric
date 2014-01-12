@@ -1,4 +1,4 @@
-<header id="banner">
+<header id="banner" style="min-height:0px !important;">
 	<div id="banner_container" class="container">
 		<h3 class="banner-title"><?php echo apply_filters( 'banner_title', '' );?></h3>
 		<p class="banner-subtitle"><?php echo apply_filters( 'banner_sub_title', get_bloginfo( 'description' ) );?></p>

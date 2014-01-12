@@ -33,3 +33,49 @@
 [05-Jan-2014 19:52:16 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 76
 [05-Jan-2014 19:56:22 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 76
 [05-Jan-2014 19:56:32 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 76
+[07-Jan-2014 00:29:32 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1624
+[07-Jan-2014 00:29:32 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1624
+[07-Jan-2014 00:29:32 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1624
+[07-Jan-2014 00:29:32 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1624
+[07-Jan-2014 00:29:32 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1624
+[07-Jan-2014 00:33:16 UTC] PHP Fatal error:  Call to undefined function get_caprate_percentage() in /home/bricreal/public_html/wp/wp-content/themes/realexpert/includes/property-loop.php on line 118
+[07-Jan-2014 00:34:37 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1614
+[07-Jan-2014 00:34:37 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1614
+[07-Jan-2014 00:34:37 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1614
+[07-Jan-2014 00:34:37 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1614
+[07-Jan-2014 00:34:37 UTC] PHP Warning:  number_format() expects parameter 2 to be long, string given in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1614
+[07-Jan-2014 01:17:50 UTC] PHP Fatal error:  Call to undefined function get_caprate_percentage() in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 98
+[07-Jan-2014 01:20:06 UTC] PHP Fatal error:  Call to undefined function get_caprate_percentage() in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 98
+[07-Jan-2014 01:25:55 UTC] PHP Fatal error:  Call to undefined function get_caprate_percentage() in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 98
+[07-Jan-2014 01:26:07 UTC] PHP Fatal error:  Call to undefined function get_caprate_percentage() in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 98
+[07-Jan-2014 01:26:22 UTC] PHP Fatal error:  Call to undefined function get_caprate_percentage() in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 98
+[07-Jan-2014 01:26:24 UTC] PHP Fatal error:  Call to undefined function get_caprate_percentage() in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 98
+[07-Jan-2014 04:14:58 UTC] PHP Warning:  strip_tags() expects parameter 1 to be string, array given in /home/bricreal/public_html/wp/wp-includes/formatting.php on line 1059
+[07-Jan-2014 04:15:41 UTC] PHP Warning:  strip_tags() expects parameter 1 to be string, object given in /home/bricreal/public_html/wp/wp-includes/formatting.php on line 1059
+[07-Jan-2014 04:17:02 UTC] PHP Warning:  strip_tags() expects parameter 1 to be string, object given in /home/bricreal/public_html/wp/wp-includes/formatting.php on line 1059
+[07-Jan-2014 06:25:10 UTC] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1428
+[07-Jan-2014 06:36:24 UTC] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/bricreal/public_html/wp/wp-content/themes/realexpert/page-property.php on line 20
+[07-Jan-2014 06:36:57 UTC] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/bricreal/public_html/wp/wp-content/themes/realexpert/page-property.php on line 20
+[07-Jan-2014 06:37:02 UTC] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/bricreal/public_html/wp/wp-content/themes/realexpert/page-property.php on line 20
+[07-Jan-2014 06:39:07 UTC] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/bricreal/public_html/wp/wp-content/themes/realexpert/page-property.php on line 19
+[07-Jan-2014 07:17:05 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1471
+[07-Jan-2014 07:28:26 UTC] PHP Parse error:  syntax error, unexpected $end in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 2283
+[07-Jan-2014 07:33:44 UTC] PHP Parse error:  syntax error, unexpected $end in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 2283
+[07-Jan-2014 07:33:47 UTC] PHP Parse error:  syntax error, unexpected $end in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 2283
+[08-Jan-2014 19:44:03 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1682
+[08-Jan-2014 20:51:30 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 153
+[08-Jan-2014 20:51:59 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 153
+[08-Jan-2014 20:52:48 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 153
+[08-Jan-2014 20:56:17 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 153
+[08-Jan-2014 20:57:24 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 153
+[08-Jan-2014 20:57:39 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 153
+[08-Jan-2014 20:58:23 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 154
+[08-Jan-2014 20:59:32 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 155
+[08-Jan-2014 21:00:11 UTC] PHP Parse error:  syntax error, unexpected T_ENDWHILE in /home/bricreal/public_html/wp/wp-content/themes/realexpert/single-property.php on line 157
+[09-Jan-2014 01:57:13 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1685
+[09-Jan-2014 01:59:36 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1686
+[09-Jan-2014 02:00:01 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1687
+[09-Jan-2014 02:00:30 UTC] PHP Warning:  Division by zero in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1687
+[09-Jan-2014 05:32:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/includes/property-recent.php on line 88
+[09-Jan-2014 05:33:12 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/includes/property-recent.php on line 89
+[09-Jan-2014 05:57:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1555

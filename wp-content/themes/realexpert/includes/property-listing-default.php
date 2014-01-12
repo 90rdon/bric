@@ -7,6 +7,12 @@
 			$status_id = 'status-'.$status_term->term_id;
 		}
 	}
+	$city_terms = get_the_terms( get_the_id(),"property-city" );
+	if(!empty( $city_terms )){
+		foreach( $city_terms as $city_term ){
+			$property_city = $city_term->name;
+		}
+	}
 ?>
 <div class="row-fluid property-listing <?php echo $status_id; ?> clearfix">
 	<div class="listing-image span5">
@@ -41,7 +47,12 @@
 			$meta_investment_caprate = get_caprate($meta_price, $meta_investment_noi);
 		?>
 		<div class="listing-meta">
-			<?php if (!empty($meta_investment_caprate)): ?>
+			<?php if(!empty($property_city)): ?>
+				<div class="community-meta clearfix">
+					<div class="meta-size"><span class="meta-text">Starting From </span><i class="icon-chevron-up"></i></div>
+				</div>
+			<?php endif; ?>
+			<?php if(!empty($meta_investment_caprate)): ?>
 				<div class="property-caprate clearfix">
 					<div class="meta-size"><span class="meta-text">Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></span></div>
 				</div>
@@ -59,6 +70,9 @@
 			<i class="icon-heart"></i>
 		</div>
 		<div class="listing-content">
+			<?php if(!empty($property_city)): ?>
+				<p>Starting from</p>
+			<?php endif; ?>
 			<div class="listing-property-price">
 				<span class="span7">
 					<?php property_price(true); ?>
