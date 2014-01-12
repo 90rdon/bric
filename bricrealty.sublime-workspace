@@ -1,0 +1,805 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"meta_in",
+				"meta_investment_noi"
+			],
+			[
+				"int_",
+				"int_rent"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wp-config.php",
+			"settings":
+			{
+				"buffer_size": 3358,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/realexpert/page-homepage-v1.php",
+			"settings":
+			{
+				"buffer_size": 4410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/realexpert/style.css",
+			"settings":
+			{
+				"buffer_size": 65278,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/realexpert/includes/property-loop.php",
+			"settings":
+			{
+				"buffer_size": 4169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1319 files for \"REAL_EXPERT_property_featured\"\n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/db_bricrealty_2013-12-26_21-30-45/bricreal_wpbric.sql:\n  422  (109, 44, 'REAL_EXPERT_property_address', '4550 South Kirkman Road, Orlando, FL 32835, USA'),\n  423  (110, 44, 'REAL_EXPERT_property_location', '28.496291,-81.46054199999998'),\n  424: (111, 44, 'REAL_EXPERT_property_featured', '1'),\n  425  (112, 44, 'REAL_EXPERT_property_slider', 'no'),\n  426  (113, 44, '_edit_lock', '1387755651:1'),\n  ...\n  505  (204, 72, 'REAL_EXPERT_property_bathrooms', '2'),\n  506  (205, 72, 'REAL_EXPERT_property_garages', '2'),\n  507: (206, 72, 'REAL_EXPERT_property_featured', '0'),\n  508  (207, 72, 'REAL_EXPERT_property_slider', 'no'),\n  509  (208, 72, 'REAL_EXPERT_agents', '51'),\n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/sample-content-realexpert.xml:\n 2578  		</wp:postmeta>\n 2579  		<wp:postmeta>\n 2580: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 2581  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 2582  		</wp:postmeta>\n ....\n 2851  		</wp:postmeta>\n 2852  		<wp:postmeta>\n 2853: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 2854  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 2855  		</wp:postmeta>\n ....\n 3078  		</wp:postmeta>\n 3079  		<wp:postmeta>\n 3080: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 3081  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 3082  		</wp:postmeta>\n ....\n 3357  		</wp:postmeta>\n 3358  		<wp:postmeta>\n 3359: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 3360  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 3361  		</wp:postmeta>\n ....\n 3576  		</wp:postmeta>\n 3577  		<wp:postmeta>\n 3578: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 3579  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 3580  		</wp:postmeta>\n ....\n 3855  		</wp:postmeta>\n 3856  		<wp:postmeta>\n 3857: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 3858  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 3859  		</wp:postmeta>\n ....\n 4097  		</wp:postmeta>\n 4098  		<wp:postmeta>\n 4099: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 4100  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 4101  		</wp:postmeta>\n ....\n 4840  		</wp:postmeta>\n 4841  		<wp:postmeta>\n 4842: 			<wp:meta_key>REAL_EXPERT_property_featured</wp:meta_key>\n 4843  			<wp:meta_value><![CDATA[1]]></wp:meta_value>\n 4844  		</wp:postmeta>\n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/includes/property-loop.php:\n   29  				'meta_query' => array(\n   30  				array(\n   31: 						'key' => 'REAL_EXPERT_property_featured',\n   32  						'value' => '1',\n   33  						'compare' => '=',\n   ..\n   42  				'meta_query' => array(\n   43  					array(\n   44: 							'key' => 'REAL_EXPERT_property_featured',\n   45  							'value' => '1',\n   46  							'compare' => '=',\n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/library/widget/widget-featured-property.php:\n   31  				'posts_per_page' => 3,\n   32  				'meta_query' => array(\n   33: 						'key' => 'REAL_EXPERT_property_featured',\n   34  						'value' => '1',\n   35  						'compare' => '=',\n\n13 matches across 4 files\n\n\nSearching 1319 files for \"Property Details\"\n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/includes/property-banner.php:\n    9  			}\n   10  			if( is_singular( 'property' ) ){\n   11: 				echo '<h3 class=\"banner-title\">'.__( 'Property Details', 'realexpert' ).'</h3>';\n   12  				echo '<p class=\"banner-subtitle\">'.get_the_title().'';\n   13  			}\n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/languages/default.po:\n 1373  \n 1374  #: ../library/meta-box/metabox-config.php:41\n 1375: msgid \"Property Details\"\n 1376  msgstr \"\"\n 1377  \n ....\n 1383  msgid \"\"\n 1384  \"Please provide property images, These images will be displayed in slider on \"\n 1385: \"property details page. Images should have minimum width of 770px and minimum \"\n 1386  \"height of 386px, Bigger size images will be cropped automatically. (up to 8 \"\n 1387  \"images)\"\n ....\n 1532  msgid \"\"\n 1533  \"Provide Agent's Email Address. Agent related messages from contact form on \"\n 1534: \"property details page, will be sent on this email address.\"\n 1535  msgstr \"\"\n 1536  \n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/library/meta-box/metabox-config.php:\n   39  $meta_boxes[] = array(\n   40  	'id' => 'property_details',\n   41: 	'title' => __( 'Property Details', 'realexpert' ),\n   42  	'pages' => array( 'property' ),\n   43  	'context' => 'normal',\n   ..\n   50  			'name' => __( 'Property Images*', 'realexpert' ),\n   51  			'id' => \"{$prefix}property_images\",\n   52: 			'desc' => __( 'Please provide property images, These images will be displayed in slider on property details page. Images should have minimum width of 770px and minimum height of 386px, Bigger size images will be cropped automatically. (up to 8 images)', 'realexpert' ),\n   53  			'type' => 'image_advanced',\n   54  			'max_file_uploads' => 8,\n   ..\n  154  			'name' => __( 'Virtual Tour Video Image', 'realexpert'),\n  155  			'id' => \"{$prefix}virtual_image\",\n  156: 			'desc' => __( 'Provide the image that will be displayed as place holder and when a user clicks over it the video will be opened in a lightbox. You must provide this image as otherwise the video will not be displayed on property details page. Image should have minimum width of 818px and minimum height 417px. Bigger size images will be cropped automatically.', 'realexpert' ),\n  157  			'type' => 'image_advanced',\n  158  			'max_file_uploads' => 1,\n  ...\n  247  			'name' => __( 'Email Address', 'realexpert'),\n  248  			'id' => \"{$prefix}agent_email\",\n  249: 			'desc' => __( 'Provide Agent\\'s Email Address. Agent related messages from contact form on property details page, will be sent on this email address.', 'realexpert' ),\n  250  			'type' => 'text',\n  251  			'std' => '',\n\n8 matches across 3 files\n\n\nSearching 1319 files for \"function property_price\"\n\n/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/functions.php:\n 1581  /*	Property Price Format\n 1582  /*-----------------------------------------------------------------------------------*/\n 1583:     function property_price($frontend=false, $featured=false){\n 1584          global $post;\n 1585  		if($frontend){\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 6510,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "wp-content/themes/realexpert/library/meta-box/metabox-config.php",
+			"settings":
+			{
+				"buffer_size": 22578,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/realexpert/functions.php",
+			"settings":
+			{
+				"buffer_size": 81409,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/realexpert/single-property.php",
+			"settings":
+			{
+				"buffer_size": 7377,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/build/PHP.sublime-build",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"fetch",
+				"Fetch: Manage"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"task",
+				"Tasks: New"
+			],
+			[
+				"gis",
+				"Gist: Create Public Gist"
+			],
+			[
+				"browser",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"edi",
+				"Project: Edit"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"minima",
+				"View: Toggle Minimap"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package contrl",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/realexpert/single-property.php",
+		"/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/my_theme/content-gallery.php",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/vendor/styles/bootstrap.css",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/assets/javascripts/nav.js",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/vendor/scripts/nav.js",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/styles/nav.styl",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/vendor/scripts/bootstrap.js",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/initialize.coffee",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/styles/application.styl",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/views/indexView.coffee",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/routes/indexRoute.coffee",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/app.coffee",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/config.coffee",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/assets/index.html",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/templates/index.emblem",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/templates/application.emblem",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/app/controllers/indexController.coffee",
+		"/Users/ed-rocha/Development/Projects/Javascript/boolean-brothers_site/package.json",
+		"/Users/ed-rocha/Development/Projects/Javascript/boo_test/app/templates/index.hbs",
+		"/Users/ed-rocha/Development/Projects/Javascript/boo_test/vendor/scripts/handlebars-1.0.rc.2.js",
+		"/Users/ed-rocha/Development/Projects/Javascript/boo_test/app/styles/bootstrap.css",
+		"/Users/ed-rocha/Development/Projects/Javascript/boo_test/public/index.html",
+		"/Users/ed-rocha/Development/Projects/Javascript/boo_test/app/assets/index.html",
+		"/Users/ed-rocha/Development/Projects/Javascript/boo_test/.gitignore",
+		"/Users/ed-rocha/Development/Projects/Javascript/boo_test/config.coffee",
+		"/Users/ed-rocha/Development/Projects/PHP/pAPI/.gitignore",
+		"/Users/ed-rocha/Development/Projects/Node/app_tower/node_modules/tower/node_modules/mint/README.md",
+		"/Users/ed-rocha/Development/Projects/Node/app_brunch_ember/node_modules/karma/lib/launchers/Firefox.js",
+		"/Users/ed-rocha/Development/Projects/PHP/app_laravel/index.php",
+		"/Users/ed-rocha/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/ed-rocha/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/ed-rocha/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/edrocha/Library/Application Support/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/Users/edrocha/Library/Application Support/Sublime Text 2/Packages/User/build/PHP.sublime-build",
+		"/Users/edrocha/Library/Application Support/Sublime Text 2/Packages/User/Gist.sublime-settings",
+		"/Users/edrocha/Development/Projects/PHP/testing/testing.TODO",
+		"/Users/edrocha/Development/Projects/PHP/testing/test.sublime-project",
+		"/Users/edrocha/Development/Projects/PHP/testing/style.css",
+		"/Users/edrocha/Development/Projects/PHP/testing/stylish.css",
+		"/Users/edrocha/Development/Projects/PHP/testing/css/style.css",
+		"/Users/edrocha/Development/Projects/PHP/testing/index.php",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/wp-content/themes/method/includes/widget-callout.php",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/wp-admin/css/wp-admin.css",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/wp-login.php",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/wp-admin/admin-functions.php",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/wp-includes/functions.php",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/wp-content/themes/method/functions.php",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/sftp-config.json",
+		"/Users/edrocha/Development/Projects/PHP/symmetria/wp-content/themes/method/js/jquery.imagesloaded.js",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/sample.js",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/views/sample.ejs",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/node_modules/ejs-locals/example/app.js",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/deploy.sh",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/deploy.bash",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/.gitignore",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/views",
+		"/Users/edrocha/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/server.js",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/index.js",
+		"/Users/edrocha/Development/Projects/Node/app_symmetria/router.js",
+		"/Users/edrocha/Downloads/DK-v1-7/dk/header.php",
+		"/Users/edrocha/Documents/development/projects/node/app.js",
+		"/Users/edrocha/Downloads/fix-ssl-non-ssl-links/init.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Users/ed-rocha/Development/Projects/PHP/bricrealty/wp-content/themes/my_theme",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"meta_price",
+			"function property_price",
+			"property_price",
+			"Property Details",
+			"REAL_EXPERT_property_featured",
+			"Marking this property featured will",
+			"property-list-title",
+			"header-backgroun",
+			"header-background",
+			"single-agent",
+			"agent-thumbnail",
+			"agents",
+			"propert",
+			"garage",
+			"$country",
+			"Map Country",
+			"/Users/ed-rocha/DEvelopment",
+			"/home/content/78/6140178/html",
+			"bricrealty.com",
+			"home/content/78/6140178/html",
+			"bricrealty.com",
+			"$cformsSettings",
+			"folder exists in the cforms plugin directory!",
+			"widgetcform",
+			"usermessageb",
+			"#usermessageb",
+			"function bloginfo",
+			"bloginfo",
+			"stylesheet",
+			"\\n\\n",
+			"\\n\\n\\n\\n\n\n\n\n\\n\\n\\n\\n\\n",
+			"\\n\\n\\n\\n\n\n\n\n\n\n\\n\\n\\n\\n\\n",
+			"\n\n\n\n\n\n\\n\\n\\n\\n\\n",
+			"padding-top",
+			"float: left",
+			"label",
+			"form",
+			";",
+			" }",
+			" {",
+			"{",
+			";",
+			"}",
+			"{",
+			"emblem",
+			"match",
+			"expect",
+			"coffeelint",
+			"ember",
+			"dashboard",
+			"wp_admin_bar_my_account_item",
+			"Welcome,",
+			"tweets",
+			"login_headerurl",
+			"wpc_url_login",
+			"wp_url_login",
+			"Powered by Wordpress",
+			"redirect_to",
+			"redirect",
+			"wordpress-logo.png",
+			"Howdy",
+			"class=\"handle\"",
+			"handle",
+			"qtrans",
+			"q_",
+			"q_translate",
+			"qtranslate",
+			")"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/Users/ed-rocha/Development/Projects/PHP",
+			"bricrealty.local",
+			"Users/ed-rocha/Development/Projects/PHP",
+			"bricrealty.local",
+			"\\n",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wp-config.php",
+					"settings":
+					{
+						"buffer_size": 3358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								871,
+								871
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 92.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/realexpert/page-homepage-v1.php",
+					"settings":
+					{
+						"buffer_size": 4410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4011,
+								4011
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1212.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/realexpert/style.css",
+					"settings":
+					{
+						"buffer_size": 65278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23925,
+								23925
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 20190.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/realexpert/includes/property-loop.php",
+					"settings":
+					{
+						"buffer_size": 4169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								483,
+								427
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 129.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 6510,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										367,
+										396
+									],
+									[
+										644,
+										673
+									],
+									[
+										966,
+										995
+									],
+									[
+										1165,
+										1194
+									],
+									[
+										1364,
+										1393
+									],
+									[
+										1563,
+										1592
+									],
+									[
+										1762,
+										1791
+									],
+									[
+										1961,
+										1990
+									],
+									[
+										2160,
+										2189
+									],
+									[
+										2359,
+										2388
+									],
+									[
+										2667,
+										2696
+									],
+									[
+										2842,
+										2871
+									],
+									[
+										3154,
+										3183
+									],
+									[
+										3535,
+										3551
+									],
+									[
+										3834,
+										3850
+									],
+									[
+										3993,
+										4009
+									],
+									[
+										4290,
+										4306
+									],
+									[
+										4584,
+										4600
+									],
+									[
+										4903,
+										4919
+									],
+									[
+										5501,
+										5517
+									],
+									[
+										5937,
+										5953
+									],
+									[
+										6379,
+										6402
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								6093,
+								6093
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2584.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/realexpert/library/meta-box/metabox-config.php",
+					"settings":
+					{
+						"buffer_size": 22578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6067,
+								6067
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2830.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/realexpert/functions.php",
+					"settings":
+					{
+						"buffer_size": 81409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59703,
+								59703
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 27136.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/realexpert/single-property.php",
+					"settings":
+					{
+						"buffer_size": 7377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4935,
+								4935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 6.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 244.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pro",
+				"page-property.php"
+			],
+			[
+				"style",
+				"wp-content/themes/my_theme/style.css"
+			],
+			[
+				"header",
+				"wp-content/themes/my_theme/header.php"
+			],
+			[
+				"index",
+				"app/templates/index.emblem"
+			],
+			[
+				"initi",
+				"app/initialize.coffee"
+			],
+			[
+				"confi",
+				"config.coffee"
+			],
+			[
+				"custom-fun",
+				"wp-content/themes/method/custom-functions.php"
+			],
+			[
+				"functions.php",
+				"wp-content/themes/method/functions.php"
+			],
+			[
+				"functions",
+				"wp-includes/functions.php"
+			],
+			[
+				"fun",
+				"wp-admin/admin-functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true
+}
