@@ -80,7 +80,7 @@ get_header(); ?>
 				<?php get_template_part( 'includes/property-recent' ); ?>
 			</div><!-- /#property_info -->
 			<!-- <div id="property_partner">
-				<?php get_template_part( 'includes/property-partners' ); ?>
+				<?php // get_template_part( 'includes/property-partners' ); ?>
 			</div> --><!-- /#property_partner -->
 
 <?php get_footer(); ?>

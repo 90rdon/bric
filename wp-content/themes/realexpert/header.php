@@ -43,8 +43,8 @@
 								</div>
 								<div class="slogan pull-left">
 									<center>
-										<div class="slogan-font1">BRIC REALTY - International Real Estate Solutions</div>
-										<div class="slogan-font2">"Buy, Sell, Invest - Your Investment Specialist"</div>
+										<div class="slogan-font1">Investment Property Specialist</div>
+										<!-- <div class="slogan-font2">"Buy, Sell, Invest - Your Investment Specialist"</div> -->
 									</center>
 								</div>
 								<div class="pull-right">

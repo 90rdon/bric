@@ -34,7 +34,6 @@
 								<?php _e( 'Fax ', 'realexpert' ); ?>
 								<?php echo get_post_meta( $agent_id, 'REAL_EXPERT_agent_fax_number', true ); ?>
 							<?php endif; ?>
-
 						</div>
 						<div class="info-social">
 							<a href="<?php echo get_post_meta( $post->ID, 'REAL_EXPERT_agent_twitter_url', true ); ?>">

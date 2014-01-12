@@ -22,7 +22,11 @@ define('DB_NAME', 'bricreal_wpbric');
 define('DB_USER', 'root');
 
 /** MySQL database password */
+<<<<<<< HEAD
 define('DB_PASSWORD', '');
+=======
+define('DB_PASSWORD', 'root');
+>>>>>>> f2c7f5cb7d425a453b9c0525d2febb74ea1c0fc1
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

@@ -882,12 +882,11 @@ function search_text(){
 		return __( 'Category', 'realexpert'  );
 	}
 	if( get_post_type() == 'property'){
-		return __( 'Property', 'realexpert'  );
+		return __( get_the_title(), 'realexpert'  );
 	}
 	if( get_post_type() == 'post'){
 		return __( 'Blog', 'realexpert'  );
 	}
-  echo get_post_type();
 	if( get_post_type() == 'agent'){
 		return __( 'Agents', 'realexpert'  );
 	}
@@ -1413,14 +1412,16 @@ if( !function_exists( 'add_custom_sortmenu' ) ){
 			$check = true;
 				echo '<a class="'.$current.'" href="'.get_permalink().$view.'">'.__( 'All', 'realexpert' ).'</a>';
 			foreach ( $terms as $term ) {
-				if( $current_term == $term->slug ){ $current = 'current'; }else{ $current=''; }
-				$view = '';
-				if(isset($_GET['view'])){
-					$view = '&view='.$_GET['view']; 
-				}else{
-					$view = '';
-				}
-					echo '<a class="'.$current.'" href="?type='.$term->slug.'&sortby=all'.$view.'">'.$term->name.'</a>';
+        if ($term->name != "Communities"){
+  				if( $current_term == $term->slug ){ $current = 'current'; }else{ $current=''; }
+  				$view = '';
+  				if(isset($_GET['view'])){
+  					$view = '&view='.$_GET['view']; 
+  				}else{
+  					$view = '';
+  				}
+  					echo '<a class="'.$current.'" href="?type='.$term->slug.'&sortby=all'.$view.'">'.$term->name.'</a>';
+        }
 			}
 		}
 		?>
@@ -1523,29 +1524,26 @@ if( !function_exists( 'add_featured_sortmenu' ) ){
 			$terms = get_terms("property-type");
 			$count = count($terms);			
 			if ( $count > 0 ){
-				$check = true;
-				$all='';
-				if( empty( $_GET['type'] ) ){
+        $check = true;
+        $all='';
+        if( empty( $_GET['type'] ) ){
         //   $page_title = get_the_title();
         //   if($page_title != "Invest"){
-				    // $_GET['type'] = 'condos';
+            // $_GET['type'] = 'condos';
         //   }
-					$all = 'current';
-				} elseif ( $_GET['type'] == 'all' ) {
-					$all = 'current';
-					unset( $_GET['type'] );
-				}
-					echo '<a class="'.$all.'" href="'.home_url().'?type=all">'.__( 'All', 'realexpert' ).'</a>';
-				foreach ( $terms as $term ) {
-          // bric customization
-          if ($term->name != "Communities"){
-  					$current = '';
-  					if( !empty( $_GET['type'] ) && $_GET['type'] == $term->slug ){
-  						$current = 'current';
-  					}
-  					echo '<a class="'.$current.'" href="'.home_url().'?type='.$term->slug.'">' . $term->name . '</a>';
+          $all = 'current';
+        } elseif ( $_GET['type'] == 'all' ) {
+          $all = 'current';
+          unset( $_GET['type'] );
+        }
+          // echo '<a class="'.$all.'" href="'.home_url().'?type=all">'.__( 'All', 'realexpert' ).'</a>';
+        foreach ( $terms as $term ) {
+          $current = '';
+          if( !empty( $_GET['type'] ) && $_GET['type'] == $term->slug ){
+            $current = 'current';
           }
-				}
+          echo '<a class="'.$current.'" href="'.home_url().'?type='.$term->slug.'">' . $term->name . '</a>';
+        }
 			}
 			?>
 				</div>

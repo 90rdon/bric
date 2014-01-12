@@ -54,7 +54,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 .slogan-font1 {
 	/*line-height: 10px !important;*/
-	margin-bottom: 15px;
+	margin-top: 23px;
 	font-size: 18px;
 }
 
@@ -1012,6 +1012,15 @@ area[title]{
 	padding-bottom:10px;
 }
 
+=======
+.community-meta{
+	border-left: 1px solid #e2e8ec;
+	border-top: 1px solid #e2e8ec;
+	background-color: #f5f7f9;
+	width: 100%;
+	color: #767d81;
+
+}
 
 .ico-size, .ico-bedroom, .ico-bathroom, .ico-heart, .ico-print, .ico-garage{
 	width:23px;
@@ -1381,6 +1390,7 @@ area[title]{
 
 		.listing-property-caprate {
 			font-size: 12px;
+			padding-top:10px;
 			padding-bottom:10px;
 			font-weight: 200;
 			margin-top: -15px;
@@ -2207,7 +2217,7 @@ a img.aligncenter {
 }
 
 #single_property_meta_wrapper .forrent{
-	background-color:#ea4d39;
+	background-color:#0E6E97;
 }
 
 #single_property_meta_wrapper .forsale{
@@ -2216,11 +2226,11 @@ a img.aligncenter {
 
 .single-property-meta >[class^="meta-"]{
 	display:inline-block;
-	padding:10px 20px;
+	padding:10px 15px;
 	border-right:1px solid #e2e8ec;
 	border-top:1px solid #e2e8ec;
 	margin:0;
-	float:left;
+	float:right;
 	color:#767d81;
 	background : #f2f5f7;
 }
@@ -2234,7 +2244,7 @@ a img.aligncenter {
 	border:none;
 	background:none;
 	padding:15px 25px;
-	float:right;
+	float:left;
 	margin-right:20px;
 	color:#FFFFFF;
 	font-size:16px;
@@ -2269,6 +2279,10 @@ a img.aligncenter {
 
 .single-property-price h6{
 	color:#007bb0;
+}
+
+.single-property-caprate{
+	max-width: 300px;
 }
 
 .agent-information ul{

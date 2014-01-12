@@ -57,3 +57,7 @@ npm-debug.log
 *.tmp_cookie
 
 *.xpressive_config
+
+# Wordpress Files
+wp-config.php
+error_log

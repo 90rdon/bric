@@ -1,2 +1,17 @@
 [21-Dec-2013 16:24:19 America/Chicago] PHP Warning:  POST Content-Length of 9719746 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
 [21-Dec-2013 16:27:20 America/Chicago] PHP Warning:  POST Content-Length of 9719746 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+<<<<<<< HEAD
+=======
+[07-Jan-2014 07:17:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1471
+[07-Jan-2014 07:19:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1471
+[07-Jan-2014 07:21:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1471
+[07-Jan-2014 07:23:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1471
+[07-Jan-2014 07:25:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1471
+[07-Jan-2014 07:27:04 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1471
+[09-Jan-2014 05:57:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1555
+[09-Jan-2014 05:58:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1555
+[09-Jan-2014 05:58:26 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1555
+[09-Jan-2014 05:58:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1555
+[09-Jan-2014 05:58:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1555
+[09-Jan-2014 05:59:25 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/bricreal/public_html/wp/wp-content/themes/realexpert/functions.php on line 1555
+>>>>>>> f2c7f5cb7d425a453b9c0525d2febb74ea1c0fc1

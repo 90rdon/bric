@@ -17,6 +17,12 @@
 								$status_id = $status_term->term_id;
 							}
 						}
+						$city_terms = get_the_terms( get_the_id(),"property-city" );
+						if(!empty( $city_terms )){
+							foreach( $city_terms as $city_term ){
+								$property_city = $city_term->name;
+							}
+						}
 						echo '<a href="'.get_permalink().'" title="'.get_the_title().'">';
 						if( has_post_thumbnail( $post->ID ) ){
 							$attribute = array(
@@ -36,12 +42,6 @@
 						<h3 class="attribute-title"><a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>" ><?php echo substr( get_the_title(), 0, 27); if( strlen( get_the_title() ) > 27 ) { echo'...'; } ?></a><i class="icon-heart"></i></h3>
 						<span class="attribute-city">
 						<?php
-						$city_terms = get_the_terms( $post->ID,"property-city" );
-						if(!empty( $city_terms )){
-							foreach( $city_terms as $city_term ){
-								echo $city_term->name;
-							}
-						}
 						// bric custom fields
 						$meta_price = get_post_meta( $post->ID, 'REAL_EXPERT_property_price', true );
 						$meta_investment_rent = get_post_meta( $post->ID, 'REAL_EXPERT_property_investment_rent', true );
@@ -83,6 +83,11 @@
 							<?php endif; ?>
 						</div>
 					</div>
+					<?php if(!empty($property_city)): ?>
+						<div class="community-meta clearfix">
+							<div class="meta-size"><span class="meta-text">Starting From </span><i class="icon-chevron-up"></i></div>
+						</div>
+					<?php endif; ?>
 					<?php	if (!empty($meta_investment_caprate)): ?>
 						<div class="property-caprate clearfix">
 							<div class="meta-size"><span class="meta-text">Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></span></div>
