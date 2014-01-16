@@ -1474,6 +1474,12 @@ if( !function_exists( 'listing_args' ) ){
           'field' => 'slug',
           'terms' => get_terms('property-city', 'fields=names') 
         );
+      }else{ //defaults to investment properties
+      	 $meta_query[] = array(
+          'key' => 'REAL_EXPERT_property_featured',
+          'value' => 1,
+          'compare' => '='
+        );
       }
     }
 		
