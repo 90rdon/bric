@@ -6,7 +6,7 @@ Template Name: Invest Page
 
 <?php get_header(); ?>
 
-<div class="listing-image span5">
+<div class="listing-image investor-nav span3">
 	<div class="property-image-container">
 		<a href="http://64.31.16.146/~bricreal/wp/investment-properties/"><img src="http://64.31.16.146/~bricreal/wp/wp-content/uploads/2014/01/shutterstock_25531114-e1389574708585-300x115.jpg" alt="shutterstock_25531114" width="300" height="115" class="alignnone size-medium wp-image-383" /></a>
 	</div>
@@ -22,7 +22,7 @@ Template Name: Invest Page
 	</div>
 </div>
 
-<div class="listing-image span5">
+<div class="listing-image investor-nav span3">
 	<div class="property-image-container">
 		<a href="http://64.31.16.146/~bricreal/wp/communities/"><img src="http://64.31.16.146/~bricreal/wp/wp-content/uploads/2014/01/bric3-300x100.jpg" alt="bric3" width="300" height="100" class="alignnone size-medium wp-image-297" /></a>
 	</div>
@@ -30,6 +30,38 @@ Template Name: Invest Page
 		<a href="http://64.31.16.146/~bricreal/wp/communities/">
 			<div class="property-caprate clearfix">
 				<div class="meta-size"><span class="meta-text">Communities</span></div>
+			</div>
+			<div class="invest-excerpt">
+				<p>Bric investment communities opportunities are designed to provide investors competitive returns with less risk.</p>
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="listing-image investor-nav span3">
+	<div class="property-image-container">
+		<a href="http://64.31.16.146/~bricreal/wp/communities/"><img src="http://64.31.16.146/~bricreal/wp/wp-content/uploads/2014/01/bric3-300x100.jpg" alt="bric3" width="300" height="100" class="alignnone size-medium wp-image-297" /></a>
+	</div>
+	<div class="listing-meta">
+		<a href="http://64.31.16.146/~bricreal/wp/communities/">
+			<div class="property-caprate clearfix">
+				<div class="meta-size"><span class="meta-text">Free Foreclosure List</span></div>
+			</div>
+			<div class="invest-excerpt">
+				<p>Bric investment communities opportunities are designed to provide investors competitive returns with less risk.</p>
+			</div>
+		</a>
+	</div>
+</div>
+
+<div class="listing-image investor-nav span3">
+	<div class="property-image-container">
+		<a href="http://64.31.16.146/~bricreal/wp/communities/"><img src="http://64.31.16.146/~bricreal/wp/wp-content/uploads/2014/01/bric3-300x100.jpg" alt="bric3" width="300" height="100" class="alignnone size-medium wp-image-297" /></a>
+	</div>
+	<div class="listing-meta">
+		<a href="http://64.31.16.146/~bricreal/wp/communities/">
+			<div class="property-caprate clearfix">
+				<div class="meta-size"><span class="meta-text">Register For Alerts</span></div>
 			</div>
 			<div class="invest-excerpt">
 				<p>Bric investment communities opportunities are designed to provide investors competitive returns with less risk.</p>

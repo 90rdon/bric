@@ -1335,6 +1335,10 @@ area[title]{
 	border-right:1px solid #dee5e8;
 	margin-right:-1px;
 }
+
+.investor-nav {
+	width:250px;
+}
 	.property-image-container {
 		padding: 15px;
 	}

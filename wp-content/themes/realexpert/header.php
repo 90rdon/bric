@@ -79,7 +79,8 @@
 					  !is_page_template( 'page-homepage-v2.php' ) &&
 					  !is_page_template( 'page-fullwidth.php' ) &&
 					  !is_page_template( 'page-search.php' ) &&
-					  !is_page_template( 'page-contact.php' ) ): ?>
+					  !is_page_template( 'page-contact.php' ) &&
+					  !is_page_template( 'page-invest.php') ): ?>
 			<div id="main" class="row-fluid">
 				<section  id="content" class="<?php echo (realexpert_get_content_width()) ?>" role="main">
 			<?php endif; ?>
