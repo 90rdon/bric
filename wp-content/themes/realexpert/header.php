@@ -13,7 +13,6 @@
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
 
 	<?php if ( of_get_option( 'favicon' ) ): ?>
 		<link rel="shortcut icon" href="<?php echo of_get_option( 'favicon' ); ?>" />
@@ -43,7 +42,7 @@
 								</div>
 								<div class="slogan pull-left">
 									<center>
-										<div class="slogan-font1">Investment Property Specialist</div>
+										<div class="slogan-font1">Investment Property Specialists</div>
 										<!-- <div class="slogan-font2">"Buy, Sell, Invest - Your Investment Specialist"</div> -->
 									</center>
 								</div>
@@ -55,7 +54,7 @@
 											$contact_phone = of_get_option('contact_phone');
 											if(!empty($contact_email) && !empty($contact_phone)) :
 										?>
-										<span class="contact-info"><i class="contact-email"></i><a href="mailto:<?php echo of_get_option( 'contact_email' ); ?>"><?php echo of_get_option( 'contact_email' ); ?></a></span>
+										<span class="contact-info"><a href="mailto:<?php echo of_get_option( 'contact_email' ); ?>"><i class="contact-email"></i>Email Us</a></span>
 										<span class="contact-info"><i class="contact-phone"></i><?php echo of_get_option( 'contact_phone' ); ?></span>
 										<?php endif; ?>
 									</div>

@@ -17,6 +17,93 @@ jQuery(document).ready(function($) {
 			  $('body').removeClass('loading');
 			}
 		});
+
+
+		/*-----------------------------------------------------------------------------------*/
+		/*	Cap Rate Adjustments
+		/*-----------------------------------------------------------------------------------*/
+		$('#management-fees-table').on({
+	    shown: function(){
+        $(this).css('overflow','visible', 'important');
+	    },
+	    hide: function(){
+        $(this).css('overflow','hidden');
+	    }
+		});
+
+		$('#calculate-cap-rate').click(function() {
+			$(this).text(function(i, old) {
+				if (old=="Open Investor's Toolbox") {
+					CalculateWithFees();
+					DisplayFees();
+					return "Close Investor's Toolbox";
+				} else {
+					CalculateWithOutFees();
+					HideFees();
+					return "Open Investor's Toolbox";
+				}
+			});
+		});
+
+		$('.search-select').change(function(){
+			CalculateWithFees();
+		});
+
+		function DisplayFees() {
+			$('#management-fee-row').show();
+			$('#maintainence-reserve-row').show();
+		}
+
+		function HideFees() {
+			$('#management-fee-row').hide();	
+			$('#maintainence-reserve-row').hide();	
+		}
+
+		function CalculateWithFees() {
+			var price = parseInt($('#property-price').first().contents().filter(function() {
+			    return this.nodeType == 3;
+			}).text().replace(',', ''));
+			var manFeeRate = parseFloat($('#property-management-fee').val());
+			var vacRate = parseFloat($('#vacancy-rate').val());
+			var mainRes = parseFloat($('#maintainence-reserve').val());
+
+			if ($('#rent').length != 0 && $('#hoa').length != 0 && $('#tax').length != 0) {
+				var rent = parseInt($('#rent').html().replace(/\D/g,''));
+				var hoa = parseInt($('#hoa').html().replace(/\D/g,''));
+				var tax = parseInt($('#tax').html().replace(/\D/g,''));
+			};
+
+			var manFee = rent * manFeeRate;
+			var goi = rent - (rent * vacRate) - manFee;
+			var noi = ((goi - hoa - tax) * 12) - mainRes;
+			var caprate = 0;
+			if (noi != 0)
+				caprate = Math.round(((noi / price) * 100) * 2) / 2;
+
+			$('.investment-cap-rate').html('Cap Rate: ' + caprate + '%');
+			$('#noi').html('<h6>' + noi + '</h6>').currency({ decimals: 0 });
+			$('#management-fee-rate').html(manFee).currency({ decimals: 0 });
+			$('#maintainence-reserve-rate').html(mainRes).currency({ decimals: 0 });
+		}
+
+		function CalculateWithOutFees() {
+			var price = parseInt($('#property-price').first().contents().filter(function() {
+			    return this.nodeType == 3;
+			}).text().replace(',', ''));
+			var rent = parseInt($('#rent').html().replace(/\D/g,''));
+			var hoa = parseInt($('#hoa').html().replace(/\D/g,''));
+			var tax = parseInt($('#tax').html().replace(/\D/g,''));
+
+			var noi = (rent - hoa - tax) * 12;
+			var caprate = 0;
+			if (noi != 0)
+				caprate = Math.round(((noi / price) * 100) * 2) / 2;
+
+			$('.investment-cap-rate').html('Cap Rate: ' + caprate + '%');
+			$('#noi').html('<h6>' + noi + '</h6>').currency({ decimals: 0 });
+			$('#management-fee-rate').html(0).currency({ decimals: 0 });
+			$('#maintainence-reserve-rate').html(0).currency({ decimals: 0 });
+		}
 		
 		/*-----------------------------------------------------------------------------------*/
 		/*	jCarousel

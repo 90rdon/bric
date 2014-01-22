@@ -1041,6 +1041,18 @@ if (!function_exists('realexpert_register_scripts')) {
 			wp_register_script( 'selectivizer', get_template_directory_uri(). '/js/selectivizr.min.js', array('jquery'), null, true );
 			wp_register_script( 'respond-js', get_template_directory_uri(). '/js/respond.min.js', array('jquery'), null, true );
 			
+      /**
+       * Add bootstrap slider input
+       */
+      wp_register_script('realexpert_jquery_ui_js', get_template_directory_uri() . '/bootstrap/js/jquery-ui-1.9.2.custom.min.js', false, null, true);
+      wp_enqueue_script( 'realexpert_jquery_ui_js' );
+      
+      wp_register_style('realexpert_jquery_ui_css', get_template_directory_uri() . '/bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css', false, null);
+      wp_enqueue_style('realexpert_jquery_ui_css');
+
+      wp_register_script('realexpert_jquery_currency_js', get_template_directory_uri() . '/js/jquery.currency.js', false, null, true);
+      wp_enqueue_script( 'realexpert_jquery_currency_js' );
+
 			/**
 			 * Add script and style for slider image
 			 * Credit : Flexslider : http://www.woothemes.com/flexslider/
@@ -1412,16 +1424,15 @@ if( !function_exists( 'add_custom_sortmenu' ) ){
 			$check = true;
 				echo '<a class="'.$current.'" href="'.get_permalink().$view.'">'.__( 'All', 'realexpert' ).'</a>';
 			foreach ( $terms as $term ) {
-        if ($term->name != "Communities"){
-  				if( $current_term == $term->slug ){ $current = 'current'; }else{ $current=''; }
-  				$view = '';
-  				if(isset($_GET['view'])){
-  					$view = '&view='.$_GET['view']; 
-  				}else{
-  					$view = '';
-  				}
-  					echo '<a class="'.$current.'" href="?type='.$term->slug.'&sortby=all'.$view.'">'.$term->name.'</a>';
-        }
+				if( $current_term == $term->slug ){ $current = 'current'; }else{ $current=''; }
+				$view = '';
+				if(isset($_GET['view'])){
+					$view = '&view='.$_GET['view']; 
+				}else{
+					$view = '';
+				}
+					echo '<a class="'.$current.'" href="?type='.$term->slug.'&sortby=all'.$view.'">'.$term->name.'</a>';
+      
 			}
 		}
 		?>
@@ -1542,13 +1553,16 @@ if( !function_exists( 'add_featured_sortmenu' ) ){
           $all = 'current';
           unset( $_GET['type'] );
         }
-          // echo '<a class="'.$all.'" href="'.home_url().'?type=all">'.__( 'All', 'realexpert' ).'</a>';
+          echo '<a class="'.$all.'" href="'.home_url().'?type=all">'.__( 'All', 'realexpert' ).'</a>';
         foreach ( $terms as $term ) {
-          $current = '';
-          if( !empty( $_GET['type'] ) && $_GET['type'] == $term->slug ){
-            $current = 'current';
+          if ($term->name != "Communities"){
+
+            $current = '';
+            if( !empty( $_GET['type'] ) && $_GET['type'] == $term->slug ){
+              $current = 'current';
+            }
+            echo '<a class="'.$current.'" href="'.home_url().'?type='.$term->slug.'">' . $term->name . '</a>';
           }
-          echo '<a class="'.$current.'" href="'.home_url().'?type='.$term->slug.'">' . $term->name . '</a>';
         }
 			}
 			?>
@@ -1645,28 +1659,28 @@ function property_status(){
 /*	Property Price Format
 /*-----------------------------------------------------------------------------------*/
     function property_price($frontend=false, $featured=false){
-        global $post;
-		if($frontend){
-			$price = '<sup class="price-curr">'.get_theme_currency().'</sup>';
-		}else{
-			$price = get_theme_currency();
-		}
-        $int_price = intval(get_post_meta($post->ID, 'REAL_EXPERT_property_price', true));
-        $price_post_fix = get_post_meta($post->ID, 'REAL_EXPERT_price_postfix', true);
-        if($int_price){
-			$decimals = intval(of_get_option( 'numb_decimal'));
-            $dec_point = of_get_option( 'dec_separator' );
-            $thousands_sep = of_get_option( 'thousands_separator' );
-            $price .= number_format($int_price,$decimals, $dec_point, $thousands_sep);
-			if($featured){
-			
-			}else{
-				$price .= '&nbsp;<span class="price-postfix">';
-				$price .= $price_post_fix;
-				$price .= '</span>';
-			}
-            echo $price;
-        }
+      global $post;
+  		if($frontend){
+  			$price = '<sup class="price-curr">'.get_theme_currency().'</sup>';
+  		}else{
+  			$price = get_theme_currency();
+  		}
+      $int_price = intval(get_post_meta($post->ID, 'REAL_EXPERT_property_price', true));
+      $price_post_fix = get_post_meta($post->ID, 'REAL_EXPERT_price_postfix', true);
+      if($int_price){
+        $decimals = intval(of_get_option( 'numb_decimal'));
+        $dec_point = of_get_option( 'dec_separator' );
+        $thousands_sep = of_get_option( 'thousands_separator' );
+        $price .= number_format($int_price,$decimals, $dec_point, $thousands_sep);
+  			if($featured){
+  			
+  			}else{
+  				$price .= '&nbsp;<span class="price-postfix">';
+  				$price .= $price_post_fix;
+  				$price .= '</span>';
+  			}
+        echo $price;
+      }
     }
 
     function get_custom_percentage($amount) {
@@ -1808,6 +1822,92 @@ function property_location(){
 			} else {
 				echo '<option value="any">'.__( 'Bathroom', 'realexpert').'</option>';
 			}
+        }
+    }
+
+/*-----------------------------------------------------------------------------------*/
+// management fee
+/*-----------------------------------------------------------------------------------*/
+    function property_management_fee($property_management_fee){
+      $numbers_array = array(
+                            '0%' => 0.00,
+                            '1%' => 0.01,
+                            '2%' => 0.02,
+                            '3%' => 0.03,
+                            '4%' => 0.04,
+                            '5%' => 0.05,
+                            '6%' => 0.06,
+                            '7%' => 0.07,
+                            '8%' => 0.08,
+                            '9%' => 0.09,
+                            '10%' => 0.1,
+                            '11%' => 0.11,
+                            '12%' => 0.12
+                        );
+
+      // $property_management_fee = '';
+      // if(isset($_GET['property_management_fee'])){
+      //   $property_management_fee = $_GET['property_management_fee'];
+      // }
+
+      if(!empty($numbers_array)){
+            foreach($numbers_array as $fee_key => $fee_value){
+                if($property_management_fee == $fee_value)
+                {
+                    echo '<option value="'.$fee_value.'" selected="selected">'.$fee_key.'</option>';
+                }else {
+                    echo '<option value="'.$fee_value.'">'.$fee_key.'</option>';
+                }
+            }
+        }
+    }
+
+
+    function vacancy_rate($vacancy_rate){
+      $numbers_array = array(
+                            '0%' => 0.00,
+                            '1%' => 0.01,
+                            '2%' => 0.02,
+                            '3%' => 0.03,
+                            '4%' => 0.04,
+                            '5%' => 0.05
+                        );
+
+      if(!empty($numbers_array)){
+            foreach($numbers_array as $fee_key => $fee_value){
+                if($vacancy_rate == $fee_value)
+                {
+                    echo '<option value="'.$fee_value.'" selected="selected">'.$fee_key.'</option>';
+                }else {
+                    echo '<option value="'.$fee_value.'">'.$fee_key.'</option>';
+                }
+            }
+        }
+    }
+
+    function maintainence_reserve($maintainence_reserve){
+      $numbers_array = array(
+                            '$100' => 100,
+                            '$200' => 200,
+                            '$300' => 300,
+                            '$400' => 400,
+                            '$500' => 500,
+                            '$600' => 600,
+                            '$700' => 700,
+                            '$800' => 800,
+                            '$900' => 900,
+                            '$1000' => 1000
+                        );
+
+      if(!empty($numbers_array)){
+            foreach($numbers_array as $fee_key => $fee_value){
+                if($maintainence_reserve == $fee_value)
+                {
+                    echo '<option value="'.$fee_value.'" selected="selected">'.$fee_key.'</option>';
+                }else {
+                    echo '<option value="'.$fee_value.'">'.$fee_key.'</option>';
+                }
+            }
         }
     }
 

@@ -34,6 +34,12 @@ get_header(); ?>
 										}
 										?>
 									<img src="<?php echo $slider_image_url; ?>" alt="<?php echo get_the_title(); ?>" />
+									<div class="flex-form">
+										<div class="flex-form-caption">
+											<h3>Maximize your investment</h3>
+										</div>
+										<a href="http://64.31.16.146/~bricreal/wp/invest/" class="btn btn-warning btn-large">Start Your Investment!</a>
+								    </div>
 									<div class="container">
 										<div class="flex-caption">
 											<div class="caption-title">

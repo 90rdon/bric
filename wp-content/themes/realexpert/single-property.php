@@ -84,7 +84,7 @@ $property_id =  $Page_ID;
 						$meta_investment_noi = get_noi($meta_investment_rent, $meta_investment_hoa, $meta_investment_tax);
 						$meta_investment_caprate = get_caprate($meta_price, $meta_investment_noi);
 					?>
-					<span class="meta-status">
+					<span class="investment-cap-rate meta-status">
 						<?php 
 							if (empty($meta_investment_caprate)){
 								echo $property_status;
@@ -118,31 +118,102 @@ $property_id =  $Page_ID;
 					<?php if(!empty($property_city)): ?>
 						<p>Starting from</p>
 					<?php endif; ?>
-					<p><h3><?php property_price(true); ?></h3></p>
+					<p><h3 id="property-price"><?php property_price(true); ?></h3></p>
 					<?php 
 						if (!empty($meta_investment_caprate)): ?>
-							<div class="listing-property-caprate single-property-caprate">
-								<div class="table-responsive">
-									<table class="table table-condensed">
-										<tbody>
-											<tr>
-												<td>Rent</td>
-												<td style="text-align:right;"><?php echo get_custom_price($meta_investment_rent); ?></td>
-											</tr>
-											<tr>
-												<td>HOA</td>
-												<td style="text-align:right;"><?php echo get_custom_price($meta_investment_hoa); ?></td>
-											</tr>
-											<tr>
-												<td>Tax</td>
-												<td style="text-align:right;"><?php echo get_custom_price($meta_investment_tax); ?></td>
-											</tr>
-											<tr>
-												<td>NOI</td>
-												<td style="text-align:right;"><?php echo get_custom_price($meta_investment_noi); ?></td>
-											</tr>
-										</tbody>
-									</table>
+							<div class="listing-property-caprate single-property-caprate row">
+								<div class="span5 well">
+									<div class="table-responsive">
+										<table class="table table-condensed">
+											<thead>
+												<tr>
+													<th colspan="2"><h6 class="investment-cap-rate">Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></h6></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Rent</td>
+													<td id="rent" style="text-align:right;"><?php echo get_custom_price($meta_investment_rent); ?></td>
+												</tr>
+												<tr>
+													<td>HOA</td>
+													<td id="hoa" style="text-align:right;"><?php echo get_custom_price($meta_investment_hoa); ?></td>
+												</tr>
+												<tr>
+													<td>Tax</td>
+													<td id="tax" style="text-align:right;"><?php echo get_custom_price($meta_investment_tax); ?></td>
+												</tr>
+												<tr id="management-fee-row">
+													<td>Property Management Fee</td>
+													<td id="management-fee-rate" style="text-align:right;">$0</td>
+												</tr>
+												<tr id="maintainence-reserve-row">
+													<td>Maintainence Reserve</td>
+													<td id="maintainence-reserve-rate" style="text-align:right;">$0</td>
+												</tr>
+												<tr>
+													<td><h6>NOI</h6></td>
+													<td style="text-align:right;"><h6 id="noi"><?php echo get_custom_price($meta_investment_noi); ?></h6></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="span1"></div>
+								<div class="span6">
+									<div class="accordion" id="management-fees-select">
+									  <div class="accordion-group">
+									    <div class="accordion-heading">
+									      <a class="accordion-toggle" data-toggle="collapse" data-parent="#management-fees-select" href="#management-fees-table">
+									        <button id="calculate-cap-rate" class="btn btn-primary">Open Investor's Toolbox</button>
+									      </a>
+									    </div>
+									    <div id="management-fees-table" class="accordion-body collapse">
+									      <div class="accordion-inner">
+										        <table id="table-cap-rate" class="table">
+															<tbody>
+																<tr>
+																	<td>Property Management Fee</td>
+																	<td>
+																		<div class="option-bar management-fee">
+																			<span class="selectwrap">
+																				<select name="property_management_fee" id="property-management-fee" class="search-select">
+																					 <?php property_management_fee(0); ?>
+																				</select>
+																			</span>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Vacancy Rate</td>
+																	<td>
+																		<div class="option-bar vacancy-rate">
+																			<span class="selectwrap">
+																				<select name="vacancy_rate" id="vacancy-rate" class="search-select">
+																					 <?php vacancy_rate(0); ?>
+																				</select>
+																			</span>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Annual Maintenance Reserve</td>
+																	<td>
+																		<div class="option-bar maintainence-reserve">
+																			<span class="selectwrap">
+																				<select name="maintainence_reserve" id="maintainence-reserve" class="search-select">
+																					 <?php maintainence_reserve(100); ?>
+																				</select>
+																			</span>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+									      </div>
+									    </div>
+									  </div>
+									</div>
 								</div>
 							</div>
 							<hr />
