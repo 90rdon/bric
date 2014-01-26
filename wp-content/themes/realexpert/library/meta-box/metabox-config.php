@@ -160,7 +160,7 @@ $meta_boxes[] = array(
 		*/
 		// Featured Mark
 		array(
-			'name' => __( 'Mark this Property as Featured', 'realexpert'),
+			'name' => __( 'Mark this Property as an Investment Property?', 'realexpert'),
 			'id' => "{$prefix}property_featured",
 			'desc' => __( 'Marking this property investment will display it in investment properties sections across the theme.', 'realexpert' ),
 			'type' => 'checkbox',
@@ -206,7 +206,7 @@ $meta_boxes[] = array(
 				'no' => __( 'No', 'realexpert' ),
 			),
 		),
-		
+
 		// Homepage Slider Image
 		array(
 			'name' => __( 'Slider Image', 'realexpert'),
@@ -215,7 +215,25 @@ $meta_boxes[] = array(
 			'type' => 'image_advanced',
 			'max_file_uploads' => 1,
 		),
-		
+
+		// Homepage Slider Button Text
+		array(
+			'name' => __( 'Slider Button Text', 'realexpert'),
+			'id' => "{$prefix}property_slider_button_text",
+			'desc' => __( 'Text inside slider button.', 'realexpert' ),
+			'type' => 'text',
+			'std' => '',
+		),
+
+		// Homepage Slider Button Link
+		array(
+			'name' => __( 'Slider Button Link', 'realexpert'),
+			'id' => "{$prefix}property_slider_button_link",
+			'desc' => __( 'Slider button link url.', 'realexpert' ),
+			'type' => 'text',
+			'std' => '',
+		),
+
 		// Property Agents
 		array(
 			'name' => __( 'Agents', 'realexpert'),
@@ -231,22 +249,22 @@ $meta_boxes[] = array(
 		),
 
 		//New Development Starting Price
-		array(
-			'name' => __( 'Starting Price', 'realexpert'),
-			'id' => "{$prefix}property_development_price",
-			'desc' => __( 'Starting price for new developments', 'realexpert' ),
-			'type' => 'text',
-			'std' => '',
-		),
+		// array(
+		// 	'name' => __( 'Starting Price', 'realexpert'),
+		// 	'id' => "{$prefix}property_development_price",
+		// 	'desc' => __( 'Starting price for new developments', 'realexpert' ),
+		// 	'type' => 'text',
+		// 	'std' => '',
+		// ),
 
-		//Rent - rent rate
-		array(
-			'name' => __( 'Rent Rate', 'realexpert'),
-			'id' => "{$prefix}property_rent_rentrate",
-			'desc' => __( 'Rent rate per month', 'realexpert' ),
-			'type' => 'text',
-			'std' => '',
-		),
+		// //Rent - rent rate
+		// array(
+		// 	'name' => __( 'Rent Rate', 'realexpert'),
+		// 	'id' => "{$prefix}property_rent_rentrate",
+		// 	'desc' => __( 'Rent rate per month', 'realexpert' ),
+		// 	'type' => 'text',
+		// 	'std' => '',
+		// ),
 
 		// Availability
 		array(
@@ -259,6 +277,16 @@ $meta_boxes[] = array(
 				'yes' => __( 'Yes', 'realexpert' ),
 				'no' => __( 'No', 'realexpert' ),
 			),
+		),
+
+		// Related Documents
+		array(
+			'name' => __( 'Related Document Upload', 'rwmb' ),
+			'id'   => "{$prefix}file_advanced",
+			'desc' => __( 'Attach PDF documents to this property ( up to 16 pdfs )', 'realexpert' ),
+			'type' => 'file_advanced',
+			'max_file_uploads' => 16,
+			'mime_type' => 'application/pdf', // Leave blank for all file types
 		),
 	),
 );

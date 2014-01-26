@@ -4,7 +4,7 @@
  *
  */?>
 
-<?php if (strtolower(get_the_title()) != 'invest'): ?>
+<?php //if (strtolower(get_the_title()) != 'invest'): ?>
 	<section id="sidebar" class="<?php echo 'span'.of_get_option( 'sidebar_width' ) ?>" role="complementary">
 		<?php
 		if ( is_dynamic_sidebar()):
@@ -17,4 +17,4 @@
 			</p>
 		<?php endif; ?>
 	</section><!-- #sidebar -->
-<?php endif; ?>
+<?php //endif; ?>

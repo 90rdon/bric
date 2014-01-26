@@ -21,12 +21,12 @@ get_header(); ?>
 												)
 											)
 						);
-						
+
 							$myposts = get_posts( $args );
 							$i = 1;
 							foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 								<li>
-									<?php // echo get_the_post_thumbnail( get_the_ID(), 'real-slider-thumb'); ?> 
+									<?php // echo get_the_post_thumbnail( get_the_ID(), 'real-slider-thumb'); ?>
 									<?php
 										$slider_image_id = get_post_meta( $post->ID, 'REAL_EXPERT_property_slider_image', true );
 										if($slider_image_id){
@@ -34,50 +34,48 @@ get_header(); ?>
 										}
 										?>
 									<img src="<?php echo $slider_image_url; ?>" alt="<?php echo get_the_title(); ?>" />
-									<div class="flex-form">
-										<div class="flex-form-caption">
-											<h3>Maximize your investment</h3>
-										</div>
-										<a href="http://64.31.16.146/~bricreal/wp/invest/" class="btn btn-warning btn-large">Start Your Investment!</a>
-								    </div>
-									<div class="container">
+									<div class="flex-container container">
 										<div class="flex-caption">
 											<div class="caption-title">
-												<h3><!--<a href="<?php echo the_permalink(); ?>">--><?php echo get_the_title(); ?></a></h3>
-												<p><?php echo substr(get_the_excerpt(),0,60); ?></p>
+												<h3><?php echo get_the_title(); ?></h3>
+												<p><?php echo get_the_excerpt(); ?></p>
+												<a href="<?php echo get_post_meta( $post->ID, 'REAL_EXPERT_property_slider_button_link', true ); ?>" class="btn btn-warning btn-large pull-right">
+													<?php echo get_post_meta( $post->ID, 'REAL_EXPERT_property_slider_button_text', true ); ?>
+												</a>
 											</div>
 											<!-- <div class="caption-meta">
 												<p class="caption-status">
 												<?php
-													$status_terms = get_the_terms( $post->ID,"property-status" );
-													if(!empty( $status_terms )){
-														foreach( $status_terms as $status_term ){
-															$property_status = $status_term->name;
-														}
-													}
-													echo $property_status;
+													// $status_terms = get_the_terms( $post->ID,"property-status" );
+													// if(!empty( $status_terms )){
+													// 	foreach( $status_terms as $status_term ){
+													// 		$property_status = $status_term->name;
+													// 	}
+													// }
+													// echo $property_status;
 												?>
 												</p>
 												<p class="caption-price">
 													<?php
-														property_price(true, true);
+														// property_price(true, true);
 													?>
 												</p>
 											</div> -->
 										</div>
 									</div>
 								</li>
-							<?php $i++; 
-							endforeach; 
+						<?php
+							$i++;
+							endforeach;
 							wp_reset_postdata();
 						?>
 				  </ul>
 				</div>
 			</div><!-- /#slider-wrapper -->
-			
-			<div id="search_form" class="container">	
-				<?php get_template_part( 'includes/adv-search' ); ?>
-			</div><!-- /#search_form -->
+
+			<!-- <div id="search_form" class="container">
+				<?php // get_template_part( 'includes/adv-search' ); ?>
+			</div> --><!-- /#search_form -->
 			<?php } ?>
 			<div id="property_list" class="container">
 				<?php get_template_part( 'includes/property-loop' ); ?>

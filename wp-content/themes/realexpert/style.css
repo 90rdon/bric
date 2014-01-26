@@ -68,7 +68,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     position: relative;
     overflow: hidden;
     /* You need at least a height, adjust this to your needs */
-    height: 450px;
+    height: 600px;
 }
 
 .carousel-wrapper{
@@ -134,11 +134,10 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 #recent-title-listing{
 	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-top: 60px;
 	max-width: 100%;
 	height: 1px;
 	background-color: #d9dfe2;
-	position: relative;
 }
 
 
@@ -477,6 +476,7 @@ code {
 #social-network a.fb:hover{ background:#254887; text-decoration:none; color:#FFFFFF; }
 #social-network a.tw:hover{ background:#00afe9; text-decoration:none; color:#FFFFFF; }
 #social-network a.rss:hover{ background:#fa5500; text-decoration:none; color:#FFFFFF; }
+#social-network a.yt:hover{ background:#fa5500; text-decoration:none; color:#FFFFFF; }
 #social-network a.gp:hover{ background:#d14232; text-decoration:none; color:#FFFFFF; }
 
 
@@ -516,16 +516,20 @@ code {
 	background:#CCC;
 }
 
-.flex-form {
-	top: -300px;
+.flexslider{
+	margin-bottom: -400px;
+}
+
+/*.flex-form {
+	top: -150px;
 }
 
 .flex-form {
 	position: relative;
 	bottom: 180px;
-	width: 400px;
+	width: auto;
 	height: 0px;
-	left: 750px;
+	left: auto;
 }
 
 .flex-form .flex-form-caption {
@@ -534,24 +538,29 @@ code {
 	opacity: 0.95;
 }
 .flex-form-caption h3 {
-	/*color: #ffffff !important;*/
-}
+	color: #ffffff !important;
+}*/
 
-.flex-caption {
-	top: -149px;
+/*.flex-caption {
+	top: -250px;
+}*/
+
+.flex-container {
+	position:relative;
+	top:-400px;
 }
 
 .flex-caption{
-	position:relative;
-	bottom:180px;
-	width:auto;
-	height:100px;
+	width: auto;
+	height: 400px;
 }
 	.flex-caption .caption-title{
-		float:left;
-		padding:10px 30px 2px;
-		background-color:rgba( 255, 255, 255, 1);
+		padding: 25px 75px 50px 75px;
+		background-color: rgba( 255, 255, 255, 1);
 		opacity: 0.95;
+		bottom: 0px;
+		position: absolute;
+		max-width:500px;
 	}
 	
 	.flex-caption .caption-meta{
@@ -592,9 +601,8 @@ code {
 /* Search Form Style */
 #search_form{
 	position:relative;
-	bottom:175px;
-	margin-bottom:-200px;
-	
+	bottom:244px;
+	margin-bottom: -180px;
 }
 
 .as-form-wrapper{
@@ -697,6 +705,12 @@ area[title]{
 	color:#FFF !important;
 }
 
+/*------------------------------------------------------*/
+/*	Investor Page	*/
+/*------------------------------------------------------*/
+.investor-options a {
+	margin-right: 10px
+}
 
 /*------------------------------------------------------*/
 /*	Select Box	*/
@@ -887,6 +901,9 @@ area[title]{
 /*------------------------------------------------------*/
 /*	Homepage property loop	*/
 /*------------------------------------------------------*/
+.property-container{
+	height:550px !important;
+}
 .property-item{
 	border:1px solid #e2e8ec;
 	background-color:#FFF;
@@ -895,6 +912,11 @@ area[title]{
 
 .property-images{
 	position:relative;
+}
+
+.property-images img{
+	width: 268px;
+	height: 180px;
 }
 
 .property-row {
@@ -1025,11 +1047,21 @@ area[title]{
 	font-weight:600;
 }
 
+.meta-text h3{
+	color: #ffffff !important;
+}
+
 .meta-size, .meta-bedroom{
 	border-right:1px solid #e2e8ec;
-	
 }
+
 .meta-size, .meta-bedroom, .meta-bathroom, .meta-garage, .meta-print{
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.meta-caprate{
 	text-align:center;
 	padding-top:10px;
 	padding-bottom:10px;
@@ -1084,6 +1116,9 @@ area[title]{
 /*------------------------------------------------------*/
 /*	Homepage property listing information	*/
 /*------------------------------------------------------*/
+#property_list{
+}
+
 #property_info {
 	margin: 70px 0 60px;
 	width: 100%;
@@ -1223,10 +1258,10 @@ area[title]{
 .partners-logo-wrapper{
 }
 
-
 /*------------------------------------------------------*/
 /*	Property Listing Archives	*/
 /*------------------------------------------------------*/
+
 .property-sort{
 	overflow:hidden;
 	height:50px;
@@ -1337,14 +1372,19 @@ area[title]{
 }
 
 .investor-nav {
-	width:250px;
+	margin-top: 20px;
 }
+
 	.property-image-container {
 		padding: 15px;
 	}
 	.listing-image img{
 		width:100%;
 		height:auto;
+	}
+
+	.invest-caprate{
+		margin-top: 20px;
 	}
 	
 	.listing-meta{
@@ -1355,6 +1395,14 @@ area[title]{
 
 	.listing-meta a{
 		text-decoration:none;
+	}
+
+	.listing-meta:hover .invest-caprate{
+		background-color: #ec4d3a;
+	}
+
+	.invest-meta:hover .invest-caprate h3{
+		color: #007bb0;
 	}
 
 	.listing-meta ul{
@@ -1375,7 +1423,8 @@ area[title]{
 	}
 
 	.invest-excerpt{
-		padding: 25px 35px;
+		padding: 50px 80px;
+		height: 60px;
 	}
 
 	#archive-wrapper .property-listing .listing-info {
@@ -1682,7 +1731,8 @@ area[title]{
 #content article.post,
 #content article.page,
 #content #comments {
-padding: 10px 20px 30px 20px;
+/*padding: 10px 20px 30px 20px;*/
+padding: 5px 20px 5px 20px;
 }
 
 article.post header h1 { /*--Post Title --*/
@@ -2267,7 +2317,7 @@ a img.aligncenter {
 .banner-title {
 	padding-top: 0px;
 	padding-left: 10px;
-	font-size: 42px;
+	font-size: 32px;
 }
 
 .banner-subtitle{
@@ -2280,6 +2330,10 @@ a img.aligncenter {
 /*----------------------------------------------------------------*/
 #single_property_meta_wrapper{
 	
+}
+
+.finance-star{
+	float: right;
 }
 
 .single-property-meta{
@@ -3018,23 +3072,48 @@ a img.aligncenter {
 	
 	#slider_wrapper {
 		height: 350px !important; 
+		margin-bottom:0px;
 	}
 	
 	#search_form {
-		bottom:0;
-		margin-bottom:0px
+		bottom: 150px;
+		margin-bottom:-5px;
 	}
 	
 	.img-link{
 		left:75%;
 	}
 	
+	.flex-container{
+		top: -450px;
+	}
+
 	.flex-direction-nav a {
 		top:40% !important;
 	}
 	
 	.flex-caption {
-		top: -124px;
+		bottom: 450px;
+	}
+
+	.flex-caption .caption-title{
+		padding: 15px 50px 25px 50px;
+	}
+
+	#property_list{
+		top: 0px;
+	}
+
+	#property_info{
+		top: 0px;
+	}
+
+	.meta-size, .meta-bedroom, .meta-bathroom, .meta-garage, .meta-print{
+		width:100%;
+	}
+
+	.jcarousel{
+		height:650px;
 	}
 	
 	.nav-background .navbar .nav>li>a {
@@ -3166,6 +3245,10 @@ a img.aligncenter {
 	.img-link{
 		width:90px;
 	}
+
+	.flex-container{
+		top:-441px;
+	}
 	
 	.flexslider .slides img {
 		max-width: 1024px;
@@ -3179,14 +3262,18 @@ a img.aligncenter {
 	
 	
 	#search_form {
-		bottom:0;
-		margin-bottom:0px;
+		bottom:150px;
+		margin-bottom:-5px;
 	}
 	
 	.flex-caption {
-		top: -115px;
+		top: -340px;
 	}
 	
+	.flex-caption .caption-title{
+		padding: 10px 30px 15px 30px;
+	}
+
 	.meta-block {
 		width: 100%;
 		border-bottom: 1px solid #e2e8ec;
@@ -3212,6 +3299,10 @@ a img.aligncenter {
 	
 	.meta-hidden{
 		display:none;
+	}
+
+	.jcarousel{
+		height:650px;
 	}
 	
 	.jcarousel .span3 {
@@ -3268,14 +3359,14 @@ a img.aligncenter {
 	}
 	
 	.flex-caption {
-		top: -77px;
+		top: -230px;
 	}
 	.flex-caption .caption-title{
-		width:260px;
+		width:340px;
 	}
 	
 	.flex-caption .caption-title p{
-		font-size:11px;
+		font-size:14px;
 	}
 	
 	.flex-caption .caption-meta{
@@ -3302,7 +3393,7 @@ a img.aligncenter {
 		bottom:0;
 		margin-bottom:0;
 	}
-	
+
 	#myCarousel .carousel-indicators li {
 		width: 60px;
 		height: 60px;
@@ -3559,7 +3650,7 @@ a img.aligncenter {
 		padding-bottom: 1px;
 	}
 	.jcarousel {
-		height: 421px;
+		height: 550px;
 	}
 	
 	.jcarousel .jcontainer {
@@ -3629,8 +3720,13 @@ a img.aligncenter {
 		margin-bottom: 0;
 	}
 	
+	.flex-container{
+		top: -195px;
+	}
+
 	.flexslider {
 		height: auto !important;
+		margin-bottom: -195px;
 	}
 	
 	ul.flex-direction-nav{

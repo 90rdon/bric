@@ -665,6 +665,12 @@ asort($typography_mixed_fonts);
 		'std' => 'http://www.plus.google.com/',
 	);
 	$options[ ] = array(
+		'desc' => __( 'You Tube URL', 'realexpert' ),
+		'id' => 'social_youtube',
+		'type' => 'text',
+		'std' => 'http://www.youtube.com/',
+	);
+	$options[ ] = array(
 		'desc' => __( 'RSS Feed URL', 'realexpert' ),
 		'id' => 'social_rss',
 		'type' => 'text',

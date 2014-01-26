@@ -42,7 +42,7 @@
 					if( $property->have_posts() ):
 						while( $property->have_posts() ): $property->the_post();
 						?>
-							<div class="span3">
+							<div class="span3 property-container">
 								<article class="property-item">
 									<div class="property-images">
 									<?php
@@ -127,7 +127,7 @@
 									<?php endif; ?>
 									<?php	if (!empty($meta_investment_caprate)): ?>
 										<div class="property-caprate clearfix">
-											<div class="meta-size"><span class="meta-text">Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></span></div>
+											<div class="meta-caprate"><span class="meta-text">Cap Rate: <?php get_custom_percentage($meta_investment_caprate); ?></span></div>
 										</div>
 									<?php endif; ?>
 									<div class="property-meta clearfix">

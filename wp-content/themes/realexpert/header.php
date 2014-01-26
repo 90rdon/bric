@@ -75,12 +75,13 @@
 
 		<div class="content-wrapper clearfix">
 			<?php do_action( 'realexpert_before_content' ); ?>
-			<?php if( !is_page_template( 'page-homepage-v1.php' ) &&
+			<?php
+				//  && !is_page_template( 'page-invest.php') )
+				if( !is_page_template( 'page-homepage-v1.php' ) &&
 					  !is_page_template( 'page-homepage-v2.php' ) &&
 					  !is_page_template( 'page-fullwidth.php' ) &&
 					  !is_page_template( 'page-search.php' ) &&
-					  !is_page_template( 'page-contact.php' ) &&
-					  !is_page_template( 'page-invest.php') ): ?>
+					  !is_page_template( 'page-contact.php' ) ): ?>
 			<div id="main" class="row-fluid">
 				<section  id="content" class="<?php echo (realexpert_get_content_width()) ?>" role="main">
 			<?php endif; ?>

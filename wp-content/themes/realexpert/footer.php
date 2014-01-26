@@ -39,8 +39,9 @@
 						<ul class="footer-social">
 							<li><a href="<?php echo esc_attr( of_get_option( 'social_facebook' ) ); ?>" title="Facebook"><i class="icon-facebook"></i></a></li>
 							<li><a href="<?php echo esc_attr( of_get_option( 'social_twitter' ) ); ?>" title="Twitter"><i class="icon-twitter"></i></a></li>
-							<li><a href="<?php echo esc_attr( of_get_option( 'social_rss' ) ); ?>" title="RSS"><i class="icon-rss"></i></a></li>							
-							<li><a href="<?php echo esc_attr( of_get_option( 'social_google_plus' ) ); ?>" title="Google Plus"><i class="icon-google-plus"></i></a></li>														
+							<!-- <li><a href="<?php //echo esc_attr( of_get_option( 'social_rss' ) ); ?>" title="RSS"><i class="icon-rss"></i></a></li> -->
+							<li><a href="<?php echo esc_attr( of_get_option( 'social_youtube' ) ); ?>" title="You Tube"><i class="icon-youtube"></i></a></li>
+							<li><a href="<?php echo esc_attr( of_get_option( 'social_google_plus' ) ); ?>" title="Google Plus"><i class="icon-google-plus"></i></a></li>
 						</ul>
 					</div>
 				</div>

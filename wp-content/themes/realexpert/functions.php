@@ -294,6 +294,7 @@ require_once dirname(__FILE__) . '/library/widget/widget-property-search.php'; /
 require_once dirname(__FILE__) . '/library/widget/widget-featured-property.php'; // Featured Property
 require_once dirname(__FILE__) . '/library/widget/widget-tabs.php'; // Tabbed Widget
 require_once dirname(__FILE__) . '/library/widget/widget-property-agent.php'; // Agent Property
+require_once dirname(__FILE__) . '/library/widget/widget-community-information.php'; // Community Information
 require_once dirname(__FILE__) . '/library/wolf-twitter/wolf-twitter.php'; // Latest Twitter Widget Core
 require_once dirname(__FILE__) . '/library/wolf-twitter/wolf-twitter-widget.php'; // Latest Twitter Widget
 
@@ -1082,6 +1083,10 @@ if (!function_exists('realexpert_register_scripts')) {
 			// Register Flexslider CSS
 			wp_register_style('flexslider_css', get_template_directory_uri() . '/theme-options/css/flexslider.css', false, null);
 			
+      // Register local idx styling
+      wp_register_style( 'realexpert-idx-style', get_template_directory_uri() . '/dsidxpress/css/style-idx.css' );
+      wp_enqueue_style( 'realexpert-idx-style' );
+
 			// Register Theme Script
 			wp_register_script( 'real-expert', get_template_directory_uri(). '/js/real-expert.js', false, null, true );
 			

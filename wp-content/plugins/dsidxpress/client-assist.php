@@ -16,9 +16,19 @@ while (!file_exists($bootstrapSearchDir . "/wp-load.php")) {
 require_once($bootstrapSearchDir . "/wp-load.php");
 if(defined('ZPRESS_API') && ZPRESS_API != '') {
 	require_once(WPMU_PLUGIN_DIR . '/akismet/loadAkismet.php');
+
 }
 
 class dsSearchAgent_ClientAssist {
+    static public function call($method) 
+    { 
+        if(method_exists('dsSearchAgent_ClientAssist', $method)) { 
+			call_user_func(array('dsSearchAgent_ClientAssist', $method));
+        }else{ 
+        	die();
+        } 
+    } 
+
 	static function SlideshowXml() {
 		$uriSuffix = '';
 		if (array_key_exists('uriSuffix', $_GET))
@@ -220,6 +230,32 @@ class dsSearchAgent_ClientAssist {
 		echo $apiHttpResponse["body"];
 		die();
 	}
+	static function ValidateLogout() {
+		// Already logged out
+		if ($_COOKIE['dsidx-visitor-auth'] == '')
+		{
+			header('Content-Type: application/json');
+			echo '{ success:false }';
+			die();
+		}
+
+		$post_vars = $_POST;
+
+		$apiHttpResponse = dsSearchAgent_ApiRequest::FetchData("Logout", $post_vars, false, 0);
+
+		header('Content-Type: application/json');
+		echo $apiHttpResponse["body"];
+
+		die();
+	}
+	static function Logout() {
+		$post_vars = $_GET;
+
+		$apiHttpResponse = dsSearchAgent_ApiRequest::FetchData("Logout", $post_vars, false, 0);
+		echo $apiHttpResponse["body"];
+
+		die();
+	}
 	static function GetVisitor() {
 		$post_vars = $_POST;
 
@@ -230,6 +266,38 @@ class dsSearchAgent_ClientAssist {
 		header('Content-Type: application/json');
 		echo $apiHttpResponse["body"];
 		die();
+	}
+	static function SsoAuthenticated () {
+		$post_vars = $_GET;
+
+		$apiHttpResponse = dsSearchAgent_ApiRequest::FetchData("SSOAuthenticated", $post_vars, false, 0, null);
+		$response = json_decode($apiHttpResponse["body"]);
+		
+		if($response->Success){			
+			$remember = !empty($_POST["remember"]) && $_POST["remember"] == "on" ? time()+60*60*24*30 : 0;
+			
+			setcookie('dsidx-visitor-public-id', $response->Visitor->PublicID, $remember, '/');
+			setcookie('dsidx-visitor-auth', $response->Visitor->Auth, $remember, '/');
+		} else {
+			if ($_COOKIE['dsidx-visitor-auth'] != '') {
+				// This means the user is no longer logged in globally.
+				// So log out of the current session by removing the cookie.
+				setcookie('dsidx-visitor-public-id', '', time()-60*60*24*30, '/');
+				setcookie('dsidx-visitor-auth', '', time()-60*60*24*30, '/');
+			}
+		}
+
+		header('Location: ' . $response->Origin);
+	}
+	static function SsoAuthenticate () {
+		$post_vars = $_GET;
+		
+		$apiHttpResponse = dsSearchAgent_ApiRequest::FetchData("SSO", $post_vars, false, 0, null, true);
+	}
+	static function SsoSignout () {
+		$post_vars = $_GET;
+
+		$apiHttpResponse = dsSearchAgent_ApiRequest::FetchData("SSOSignOut", $post_vars, false, 0, null, true);
 	}
 	static function Register(){
 		
@@ -446,7 +514,7 @@ class dsSearchAgent_ClientAssist {
 }
 if(!empty($_REQUEST['action']))
 {
-	call_user_func(array('dsSearchAgent_ClientAssist',  $_REQUEST['action']));
+	dsSearchAgent_ClientAssist::call($_REQUEST['action']);
 }
 else
 {
