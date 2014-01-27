@@ -24,13 +24,13 @@
 					$args = array(
 						'post_type' => 'property',
 						'posts_per_page' => -1,
-						'tax_query' => array( 
+						'meta_query' => array(
 							array(
-								'taxonomy' => 'property-city',
-								'field' => 'slug',
-								'terms' => get_terms('property-city', 'fields=names') 
-							),
-						),
+									'key' => 'REAL_EXPERT_property_community',
+									'value' => '1',
+									'compare' => '=',
+								)
+						),	
 						//'tax_query' => array( array('taxonomy' => 'property-type','field' => 'slug','terms' => $type ),),
 					);
 

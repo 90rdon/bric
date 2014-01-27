@@ -158,11 +158,29 @@ $meta_boxes[] = array(
 			'max_file_uploads' => 1,
 		),
 		*/
-		// Featured Mark
+		// Investment Mark
 		array(
 			'name' => __( 'Mark this Property as an Investment Property?', 'realexpert'),
+			'id' => "{$prefix}property_investment",
+			'desc' => __( 'Marking this property will display it in investment properties sections across the theme.', 'realexpert' ),
+			'type' => 'checkbox',
+			'std' => '',
+		),
+
+		// Featured Mark
+		array(
+			'name' => __( 'Mark this Property a Featured Property?', 'realexpert'),
 			'id' => "{$prefix}property_featured",
-			'desc' => __( 'Marking this property investment will display it in investment properties sections across the theme.', 'realexpert' ),
+			'desc' => __( 'Marking this property will display it in the featured properties side bar sections across the theme.', 'realexpert' ),
+			'type' => 'checkbox',
+			'std' => '',
+		),
+
+		// Community Mark
+		array(
+			'name' => __( 'Mark this Property as a Community Property?', 'realexpert'),
+			'id' => "{$prefix}property_community",
+			'desc' => __( 'Marking this property will display it in the communities sections across the theme.', 'realexpert' ),
 			'type' => 'checkbox',
 			'std' => '',
 		),

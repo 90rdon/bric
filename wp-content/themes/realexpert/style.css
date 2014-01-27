@@ -56,6 +56,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 	/*line-height: 10px !important;*/
 	margin-top: 23px;
 	font-size: 18px;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-style: italic;
 }
 
 .slogan-font2 {
@@ -68,7 +70,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     position: relative;
     overflow: hidden;
     /* You need at least a height, adjust this to your needs */
-    height: 600px;
+    height: 400px;
 }
 
 .carousel-wrapper{
@@ -902,7 +904,7 @@ area[title]{
 /*	Homepage property loop	*/
 /*------------------------------------------------------*/
 .property-container{
-	height:550px !important;
+	height:460px !important;
 }
 .property-item{
 	border:1px solid #e2e8ec;
@@ -975,6 +977,8 @@ area[title]{
 	font-weight: 400;
 	color: #e8567f;
 	line-height: 1em;
+	overflow-x: hidden;
+	white-space: nowrap;
 	
 	transition:color .3s ease;
 	-webkit-transition:color .3s ease;
@@ -3113,7 +3117,7 @@ a img.aligncenter {
 	}
 
 	.jcarousel{
-		height:650px;
+		height:460px;
 	}
 	
 	.nav-background .navbar .nav>li>a {
@@ -3302,7 +3306,7 @@ a img.aligncenter {
 	}
 
 	.jcarousel{
-		height:650px;
+		height:460px;
 	}
 	
 	.jcarousel .span3 {
@@ -3650,7 +3654,7 @@ a img.aligncenter {
 		padding-bottom: 1px;
 	}
 	.jcarousel {
-		height: 550px;
+		height: 460px;
 	}
 	
 	.jcarousel .jcontainer {

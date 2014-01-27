@@ -1389,18 +1389,18 @@ if( !function_exists( 'add_custom_sortmenu' ) ){
 		if( is_page_template( 'page-property.php' ) ){
 	?>	
 		<div id="title-listing" class="container">
-			<div class="property-list-title">
+			<!-- <div class="property-list-title">
         <?php 
           // bric customization
-          $page_title = get_the_title();
-          if($page_title == 'Invest'){
-            $page_title = 'Investment Properties';
-          }elseif($page_title == "Communities"){
-            $page_title = "Communities";
-          }
-          echo __( $page_title, 'realexpert' ); 
+          // $page_title = get_the_title();
+          // if($page_title == 'Invest'){
+          //   $page_title = 'Investment Properties';
+          // }elseif($page_title == "Communities"){
+          //   $page_title = "Communities";
+          // }
+          // echo __( $page_title, 'realexpert' ); 
         ?>
-      </div>
+      </div> -->
 			<div class="property-list-by">
 		<?php
 		
@@ -1478,21 +1478,15 @@ if( !function_exists( 'listing_args' ) ){
             'field' => 'slug',
             'terms' => 'for-rent'
         );
-      }elseif($page_title == "Invest"){
+      }elseif($page_title == "Communities"){
         $meta_query[] = array(
-          'key' => 'REAL_EXPERT_property_featured',
+          'key' => 'REAL_EXPERT_property_community',
           'value' => 1,
           'compare' => '='
         );
-      }elseif($page_title == "Communities"){
-        $tax_query[] = array(
-          'taxonomy' => 'property-city',
-          'field' => 'slug',
-          'terms' => get_terms('property-city', 'fields=names') 
-        );
       }else{ //defaults to investment properties
       	 $meta_query[] = array(
-          'key' => 'REAL_EXPERT_property_featured',
+          'key' => 'REAL_EXPERT_property_investment',
           'value' => 1,
           'compare' => '='
         );
@@ -1588,7 +1582,7 @@ if( !function_exists( 'add_single_property_related' ) ){
 			get_template_part( 'includes/property-related' );
 		}
 	}
-	add_action( 'realexpert_after_content', 'add_single_property_related' );
+	// add_action( 'realexpert_after_content', 'add_single_property_related' );
 }
 
 if ( !function_exists( 'add_wrapper_start' ) ) {

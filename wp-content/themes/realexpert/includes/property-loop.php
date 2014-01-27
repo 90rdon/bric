@@ -28,7 +28,7 @@
 				),
 				'meta_query' => array(
 				array(
-						'key' => 'REAL_EXPERT_property_featured',
+						'key' => 'REAL_EXPERT_property_investment',
 						'value' => '1',
 						'compare' => '=',
 					)
@@ -41,7 +41,7 @@
 				'paged'=>$paged,
 				'meta_query' => array(
 					array(
-							'key' => 'REAL_EXPERT_property_featured',
+							'key' => 'REAL_EXPERT_property_investment',
 							'value' => '1',
 							'compare' => '=',
 						)
@@ -95,12 +95,12 @@
 						<h3 class="attribute-title"><a href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title(); ?>" ><?php echo substr( get_the_title(), 0, 27); if( strlen( get_the_title() ) > 27 ) { echo'...'; } ?></a><i class="icon-heart"></i></h3>
 						<span class="attribute-city">
 						<?php
-						$city_terms = get_the_terms( $post->ID,"property-city" );
-						if(!empty( $city_terms )){
-							foreach( $city_terms as $city_term ){
-								echo $city_term->name;
-							}
-						}
+							// $city_terms = get_the_terms( $post->ID,"property-city" );
+							// if(!empty( $city_terms )){
+							// 	foreach( $city_terms as $city_term ){
+							// 		echo $city_term->name;
+							// 	}
+							// }
 						?>
 						</span>
 						<div class="attribute-price">
