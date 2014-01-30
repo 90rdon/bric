@@ -202,7 +202,7 @@ $property_id =  $Page_ID;
 																		<div class="option-bar maintainence-reserve">
 																			<span class="selectwrap">
 																				<select name="maintainence_reserve" id="maintainence-reserve" class="search-select">
-																					 <?php maintainence_reserve(100); ?>
+																					 <?php maintainence_reserve(0); ?>
 																				</select>
 																			</span>
 																		</div>

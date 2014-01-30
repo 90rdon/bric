@@ -28,7 +28,7 @@
 			// The Query
 			$query_args = array(
 				'post_type' => 'property',
-				'posts_per_page' => 3,
+				'posts_per_page' => 4,
 				'meta_query' => array(
 					array(
 							'key' => 'REAL_EXPERT_property_featured',
@@ -40,7 +40,7 @@
 			
 			$query_args['orderby'] = 'meta_value_num';
     	$query_args['meta_key'] = 'REAL_EXPERT_property_price';
-    	$query_args['order'] = 'ASC';
+    	$query_args['order'] = 'DESC';
 
 			$featured_query = new WP_Query( $query_args );
 			if( $featured_query->have_posts()){

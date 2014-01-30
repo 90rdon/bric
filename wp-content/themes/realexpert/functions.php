@@ -1388,19 +1388,19 @@ if( !function_exists( 'add_custom_sortmenu' ) ){
 	function add_custom_sortmenu(){
 		if( is_page_template( 'page-property.php' ) ){
 	?>	
-		<div id="title-listing" class="container">
-			<!-- <div class="property-list-title">
-        <?php 
+    <div class="container">
+      <?php 
           // bric customization
-          // $page_title = get_the_title();
-          // if($page_title == 'Invest'){
-          //   $page_title = 'Investment Properties';
-          // }elseif($page_title == "Communities"){
-          //   $page_title = "Communities";
-          // }
-          // echo __( $page_title, 'realexpert' ); 
-        ?>
-      </div> -->
+          $page_title = get_the_title();
+          if($page_title == 'Investment Properties'): ?>
+        <div class="alert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <p>Our current inventory of property is constantly changing and not all properties are listed on this page.</p> 
+          <p>Please <a href="http://64.31.16.146/~bricreal/wp/contact-us/?">contact us</a> to find out about our latest acquisitions or other available investment property opportunities.</p>
+        </div>
+      <?php endif; ?>
+    </div>
+		<div id="title-listing" class="container">
 			<div class="property-list-by">
 		<?php
 		

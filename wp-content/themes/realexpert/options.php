@@ -659,10 +659,10 @@ asort($typography_mixed_fonts);
 		'std' => 'http://www.twitter.com/',
 	);
 	$options[ ] = array(
-		'desc' => __( 'Google Plus URL', 'realexpert' ),
-		'id' => 'social_google_plus',
+		'desc' => __( 'Linked In', 'realexpert' ),
+		'id' => 'social_linkedin',
 		'type' => 'text',
-		'std' => 'http://www.plus.google.com/',
+		'std' => 'http://www.linkedin.com/',
 	);
 	$options[ ] = array(
 		'desc' => __( 'You Tube URL', 'realexpert' ),
@@ -671,11 +671,17 @@ asort($typography_mixed_fonts);
 		'std' => 'http://www.youtube.com/',
 	);
 	$options[ ] = array(
-		'desc' => __( 'RSS Feed URL', 'realexpert' ),
-		'id' => 'social_rss',
+		'desc' => __( 'Google Plus URL', 'realexpert' ),
+		'id' => 'social_google_plus',
 		'type' => 'text',
-		'std' => 'http://feeds.feedburner.com/',
+		'std' => 'http://www.plus.google.com/',
 	);
+	// $options[ ] = array(
+	// 	'desc' => __( 'RSS Feed URL', 'realexpert' ),
+	// 	'id' => 'social_rss',
+	// 	'type' => 'text',
+	// 	'std' => 'http://feeds.feedburner.com/',
+	// );
 	
 	return $options;
 

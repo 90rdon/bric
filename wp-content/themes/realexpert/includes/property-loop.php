@@ -51,7 +51,7 @@
 
 		$property_args['orderby'] = 'meta_value_num';
     $property_args['meta_key'] = 'REAL_EXPERT_property_price';
-    $property_args['order'] = 'ASC';
+    $property_args['order'] = 'DESC';
 
 		$property_listing_query = new WP_Query( $property_args );
 		$row = 1;

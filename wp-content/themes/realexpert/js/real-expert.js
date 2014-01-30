@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 		$('.flexslider').flexslider({
 			animation: "fade",
 			slideshow: slide.start,
-			slideshowSpeed: slide.interval,
+			slideshowSpeed: 12000,
 			controlNav: false,
 			directionNav: true,
 			controlsContainer: '.flex-container',
@@ -17,6 +17,20 @@ jQuery(document).ready(function($) {
 			  $('body').removeClass('loading');
 			}
 		});
+
+		var querystr = location.search.replace('?', '');
+
+		if (('#choice_7_1')){
+			$('#choice_7_1').prop('checked', querystr == 'foreclosure-list');
+		}
+
+		if (('#choice_7_2')){
+			$('#choice_7_2').prop('checked', querystr == 'investment-properties' || querystr == 'property-management');
+		}
+
+		if (('#choice_7_3')){
+			$('#choice_7_3').prop('checked', querystr == 'property-management');
+		}
 
 
 		/*-----------------------------------------------------------------------------------*/
