@@ -1886,6 +1886,7 @@ function property_location(){
 
     function maintainence_reserve($maintainence_reserve){
       $numbers_array = array(
+                            '$0' => 0,
                             '$100' => 100,
                             '$200' => 200,
                             '$300' => 300,

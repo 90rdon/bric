@@ -54,7 +54,7 @@
 											$contact_phone = of_get_option('contact_phone');
 											if(!empty($contact_email) && !empty($contact_phone)) :
 										?>
-										<span class="contact-info"><a href="http://64.31.16.146/~bricreal/wp/contact-us/?foreclosure-list"><i class="contact-email"></i>Foreclosure List</a></span>
+										<span class="contact-info"><a href="http://64.31.16.146/~bricreal/wp/contact-us/?foreclosure-list"><i class="contact-email"></i>Free Foreclosure List</a></span>
 										<span class="contact-info"><i class="contact-phone"></i><?php echo of_get_option( 'contact_phone' ); ?></span>
 										<?php endif; ?>
 									</div>
