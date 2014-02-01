@@ -1396,7 +1396,7 @@ if( !function_exists( 'add_custom_sortmenu' ) ){
         <div class="alert">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
           <p>Our current inventory of property is constantly changing and not all properties are listed on this page.</p> 
-          <p>Please <a href="http://64.31.16.146/~bricreal/wp/contact-us/?">contact us</a> to find out about our latest acquisitions or other available investment property opportunities.</p>
+          <p>Please <a href="http://bricrealty.com/contact-us/?investment-properties">contact us</a> to find out about our latest acquisitions or other available investment property opportunities.</p>
         </div>
       <?php endif; ?>
     </div>

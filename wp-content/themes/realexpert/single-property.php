@@ -100,7 +100,7 @@ $property_id =  $Page_ID;
 					<span class="meta-row"><i class="ico-bathroom"></i><?php echo $meta_bathrooms.'<span class="meta-hidden">'.__( ' Bathrooms', 'realexpert' ).'</span>'; ?></span>
 					<span class="meta-row"><i class="ico-size"></i><?php echo $meta_size; ?></span>
 					<?php if (!empty($property_city)): ?>
-						<span class="meta-row" style="height:21px;">Starting from</span>
+						<span class="meta-row" style="height:23px;">Starting from</span>
 					<?php endif; ?>
 					<!-- <span class="meta-row second-row">Rent: <?php echo get_custom_price($meta_investment_rent); ?></span>
 					<span class="meta-row second-row">HOA: <?php echo get_custom_price($meta_investment_hoa); ?></span>
