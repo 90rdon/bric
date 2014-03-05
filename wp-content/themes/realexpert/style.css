@@ -518,7 +518,7 @@ code {
 }
 
 .flexslider{
-	margin-bottom: -400px;
+	/*margin-bottom: -400px;*/
 }
 
 /*.flex-form {
@@ -548,12 +548,12 @@ code {
 
 .flex-container {
 	position:relative;
-	top:-400px;
+	/*top:-400px;*/
 }
 
 .flex-caption{
 	width: auto;
-	height: 400px;
+	/*height: 400px;*/
 }
 	.flex-caption .caption-title{
 		padding: 20px 25px 20px 25px;
@@ -3090,19 +3090,20 @@ a img.aligncenter {
 	}
 	
 	.flex-container{
-		top: -450px;
+		/*top: -450px;*/
 	}
 
 	.flex-direction-nav a {
 		top:40% !important;
 	}
 	
-	.flex-caption {
-		bottom: 450px;
-	}
+	/*.flex-caption {
+		bottom: 50px !important;
+	}*/
 
 	.flex-caption .caption-title{
 		padding: 15px 50px 25px 50px;
+		bottom: 50px !important;
 	}
 
 	#property_list{
@@ -3272,7 +3273,8 @@ a img.aligncenter {
 	}
 	
 	.flex-caption {
-		top: -340px;
+		/*top: -340px;*/
+		height: 400px;
 	}
 	
 	.flex-caption .caption-title{
@@ -3421,7 +3423,9 @@ a img.aligncenter {
 		list-style: none;
 		border-top: 1px solid #e2e8ec;
 	}
-	
+	#eventItem a {
+		height: 150px !important;
+	}
 }
 @media (max-width: 979px){
 	.property-attribute{
@@ -3743,11 +3747,12 @@ a img.aligncenter {
 
 	.flex-caption {
 		top: 0px;
+		height:400px;
 	}
-	.flex-caption .caption-title{
+	/*.flex-caption .caption-title{
 		width:260px;
 		padding: 18px 5px;
-	}
+	}*/
 	
 	.flex-caption .caption-title p{
 		font-size:11px;
@@ -3816,5 +3821,190 @@ a img.aligncenter {
 	.recent-property-list-by {
 		border-left:none;
 	}
+	#eventItem a {
+		height: 180px !important;
+	}
 }
 
+
+
+/*seminar pages*/
+#events-hero{
+	height: 300px;
+	overflow-y: scroll;
+}
+
+#events-hero h2{
+	font-size: 20px;
+}
+
+#seminar-hero > a,
+#seminar-hero a{
+	text-decoration: none;
+}
+
+.article-title {
+	border-top: 2px solid #c8c9c9;
+	text-align: center;
+	position: relative;
+	top: 24px;
+	margin: 0 0 19px;
+}
+.article-title h2 {
+	background: #eee;
+	padding: 0 15px;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	font: 35px/38px 'Playfair Display', serif;
+	position: relative;
+	top: -22px;
+}
+
+.quote {
+	font-family: 'Playfair Display', serif;
+	font-size: 20pt;
+	font-style: italic;
+	line-height: 20pt;
+	margin-bottom: 1em;
+}
+.info {
+	margin-bottom: 4em;
+}
+#eventItem{
+	float: left;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 14pt;
+}
+#eventItem > p{
+	font-family: Montserrat, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+}
+#eventItem a{
+	color: #122243;
+	height: 250px;
+}
+#eventItem a:hover {
+	color:#0b55bf;
+}
+.event1{
+	display: inline-block;
+	position: relative;
+	background: url(/wp-content/uploads/2014/02/marketing.png) no-repeat;
+	background-position: center 0;
+	padding-top: 6em;
+}
+.event1 span{
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
+	background: url(/wp-content/uploads/2014/02/marketingHover.png) no-repeat;
+	background-position: center 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:    opacity 0.5s;
+	-o-transition:      opacity 0.5s;
+}
+.event1:hover span {
+	opacity: 1;
+}
+.event2{
+	display: inline-block;
+	position: relative;
+	background: url(/wp-content/uploads/2014/02/camp.png) no-repeat;
+	background-position: center 0;
+	padding-top: 6em;
+}
+.event2 span{
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
+	background: url(/wp-content/uploads/2014/02/campHover.png) no-repeat;
+	background-position: center 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition:    opacity 0.3s;
+	-o-transition:      opacity 0.3s;
+}
+.event2:hover span {
+	opacity: 1;
+}
+.event3{
+	display: inline-block;
+	position: relative;
+	background: url(/wp-content/uploads/2014/02/REO.png) no-repeat;
+	background-position: center 0;
+	padding-top: 6em;
+}
+.event3 span{
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
+	background: url(/wp-content/uploads/2014/02/REOHover.png) no-repeat;
+	background-position: center 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:    opacity 0.5s;
+	-o-transition:      opacity 0.5s;
+}
+.event3:hover span {
+	opacity: 1;
+}
+.event4{
+	display: inline-block;
+	position: relative;
+	background: url(/wp-content/uploads/2014/02/event.png) no-repeat;
+	background-position: center 0;
+	padding-top: 6em;
+}
+.event4 span{
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
+	background: url(/wp-content/uploads/2014/02/eventHover.png) no-repeat;
+	background-position: center 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:    opacity 0.5s;
+	-o-transition:      opacity 0.5s;
+}
+.event4:hover span {
+	opacity: 1;
+}
+.event5{
+	display: inline-block;
+	position: relative;
+	background: url(/wp-content/uploads/2014/02/sum.png) no-repeat;
+	background-position: center 0;
+	padding-top: 6em;
+}
+.event5 span{
+	position: absolute;
+	top:0; left: 0; bottom: 0; right: 0;
+	background: url(/wp-content/uploads/2014/02/sumHover.png) no-repeat;
+	background-position: center 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition:    opacity 0.5s;
+	-o-transition:      opacity 0.5s;
+}
+.event5:hover span {
+	opacity: 1;
+}
+.holderEvent {
+	background-image: url(../images/bg-block-05.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	padding: 112px 0 132px;
+}
+.blockText {
+	background: url(../images/bg-block-03.png) repeat;
+	padding: 46px 40px 52px;
+	color: #FFF;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 30px;
+	line-height: 37px;
+}
+.blockText p:last-child {
+	font-style: italic;
+}

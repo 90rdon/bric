@@ -375,6 +375,64 @@ if (!isset($content_width)) {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/*  Login Filters */
+/*-----------------------------------------------------------------------------------*/
+/**
+ * Disable admin bar on the frontend of your website
+ * for subscribers.
+ */
+function themeblvd_disable_admin_bar() { 
+  if( ! current_user_can('edit_posts') )
+    add_filter('show_admin_bar', '__return_false'); 
+}
+add_action( 'after_setup_theme', 'themeblvd_disable_admin_bar' );
+ 
+/**
+ * Redirect back to homepage and not allow access to 
+ * WP admin for Subscribers.
+ */
+function themeblvd_redirect_admin(){
+  if ( ! current_user_can( 'edit_posts' ) ){
+    // wp_redirect( site_url() );
+    // exit;   
+    $homepage = get_site_url();
+
+    // get whatever is stored in the GET-var 'login'
+    $login = filter_input( INPUT_GET, 'login', FILTER_SANITIZE_STRIPPED );
+
+    // if the content of 'login' is in the group (here as array), redirect to the homepage
+    if ( in_array( $login, array( 'incorrect', 'empty' ) ) ) {
+
+      wp_redirect( $homepage );
+
+    } else {
+
+      // $_SERVER['HTTP_REFERER'] cannot really be trusted and $referrer can be empty.
+      // setup a default location for redirecting.
+      // @see: http://php.net/manual/en/reserved.variables.server.php
+      $referrer = ( isset( $_SERVER['HTTP_REFERER'] ) && ! empty( $_SERVER['HTTP_REFERER'] ) ) ?
+        $_SERVER['HTTP_REFERER'] : $homepage;
+
+      // wp-login.php use wp_safe_redirect, this means only pages on the same domain are accepted
+      // @see: http://codex.wordpress.org/Function_Reference/wp_safe_redirect
+
+      // get the host of our blog (strip scheme like http:// and https://)
+      $host = parse_url( $homepage, PHP_URL_HOST );
+
+      // check if the referrer is on the same host as the blog
+      $redirect_to = ( false != stristr( $referrer, $host ) ) ?
+          $referrer : $homepage;
+
+      wp_redirect( $redirect_to );
+
+    }
+
+    exit;
+  }
+}
+add_action( 'admin_init', 'themeblvd_redirect_admin' );
+
+/*-----------------------------------------------------------------------------------*/
 /*	Basic Theme Setup	*/
 /*-----------------------------------------------------------------------------------*/
 if (!function_exists('realexpert_setup_theme')) {

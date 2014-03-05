@@ -18,6 +18,8 @@ jQuery(document).ready(function($) {
 			}
 		});
 
+		$("[rel='tooltip']").tooltip();
+
 		var querystr = location.search.replace('?', '');
 
 		if (('#choice_7_1')){
